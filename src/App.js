@@ -24,7 +24,7 @@ class App extends Component{
        
       <HashRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
         {NavBar}
-        <Switch>
+        <Routes>
           <Route path="/" element={Home}/>  
           <Route path="portfolio" element={Home}/>
           <Route path="about" element={About}/> 
@@ -35,7 +35,7 @@ class App extends Component{
           <Route path="nftscoring" element={NFTScoring}/>  
           <Route path="selfcheckout" element={SelfCheckout}/>  
           <Route path="sustainableinfrastructure" element={SustainableInfrastructure}/>  
-        </Switch>
+        </Routes>
       </HashRouter>
     </div>
     );
