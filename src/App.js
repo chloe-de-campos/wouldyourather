@@ -26,15 +26,15 @@ class App extends Component{
         {NavBar}
         <Routes>
           <Route path="/" element={Home}/>  
-          <Route path="portfolio" element={Home}/>
-          <Route path="about" element={About}/> 
-          <Route path="buildazoo" element={BuildAZoo}/>  
-          <Route path="eggproblem" element={EggProblem}/>  
-          <Route path="mars" element={Mars}/>  
-          <Route path="belgianembassy" element={BelgianEmbassy}/>  
-          <Route path="nftscoring" element={NFTScoring}/>  
-          <Route path="selfcheckout" element={SelfCheckout}/>  
-          <Route path="sustainableinfrastructure" element={SustainableInfrastructure}/>  
+          <Route path="/portfolio" element={Home}/>
+          <Route path="/about" element={About}/> 
+          <Route path="/buildazoo" element={BuildAZoo}/>  
+          <Route path="/eggproblem" element={EggProblem}/>  
+          <Route path="/mars" element={Mars}/>  
+          <Route path="/belgianembassy" element={BelgianEmbassy}/>  
+          <Route path="/nftscoring" element={NFTScoring}/>  
+          <Route path="/selfcheckout" element={SelfCheckout}/>  
+          <Route path="/sustainableinfrastructure" element={SustainableInfrastructure}/>  
         </Routes>
       </HashRouter>
     </div>
