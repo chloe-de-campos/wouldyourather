@@ -1,31 +1,45 @@
 import "./App.css";
 import { useState } from "react";
-import bakeryData from "./assets/bakery-data.json";
+import Home from './Home';
+import About from './About.js';
+import NavBar from './components/NavBar';
+import BuildAZoo from './project-pages/BuildAZoo/BuildAZoo.js'
+import EggProblem from './project-pages/EggProblem/EggProblem.js'
+import Mars from './project-pages/Mars/Mars.js'
+import BelgianEmbassy from './project-pages/BelgianEmbassy/BelgianEmbassy.js'
+import NFTScoring from './project-pages/NFTScoring/NFTScoring.js'
+import SelfCheckout from './project-pages/SelfCheckout/SelfCheckout.js'
+import SustainableInfrastructure from './project-pages/SustainableInfrastructure/SustainableInfrastructure.js'
 
-/* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-bakeryData.forEach((item) => {
-  item.image = process.env.PUBLIC_URL + "/" + item.image;
-});
-/* ############################################################## */
 
-function App() {
-  // TODO: use useState to create a state variable to hold the state of the cart
-  /* add your cart state code here */
+import React, { Component } from 'react';
+import { Switch, BrowserRouter,Router, Route, Routes, Navigation, Link } from 'react-router-dom';
 
-  return (
-    <div className="App">
-      <h1>My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
 
-      {bakeryData.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
-        <p>Bakery Item {index}</p> // replace with BakeryItem component
-      ))}
-
+// Just the page router
+class App extends Component{
+  render() {
+    return (   
       <div>
-        <h2>Cart</h2>
-        {/* TODO: render a list of items in the cart */}
-      </div>
+       
+      <BrowserRouter style={"width: 100%"}>
+        {NavBar}
+        <Routes>
+          <Route path="/" element={Home}/>  
+          <Route path="portfolio" element={Home}/>
+          <Route path="about" element={About}/> 
+          <Route path="buildazoo" element={BuildAZoo}/>  
+          <Route path="eggproblem" element={EggProblem}/>  
+          <Route path="mars" element={Mars}/>  
+          <Route path="belgianembassy" element={BelgianEmbassy}/>  
+          <Route path="nftscoring" element={NFTScoring}/>  
+          <Route path="selfcheckout" element={SelfCheckout}/>  
+          <Route path="sustainableinfrastructure" element={SustainableInfrastructure}/>  
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+    );
+  }
 }
 
 export default App;

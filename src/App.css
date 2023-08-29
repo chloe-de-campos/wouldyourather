@@ -1,9 +1,358 @@
-/* Add styling for your page here */
+/* pare this down!! */
 
-.App {
+element {
+  --nav-height: 150px;
+}
+
+
+img {
+  object-fit:fill;
+  max-height: 100%;
+   
+  width: auto; 
+  max-width: 100%;
+  height: min-content;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 
 }
 
-.BakeryItem {
+#cols {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project-image{
+  width: max(70%, 400px)
+}
+
+.project-image :hover{
+  transform: scale(1.1);
+  transition: .1s;
+ 
+}
+
+.project-image:active{
+  transform: scale(1.5);
+  transition: .1s;
+
+}
+
+@media screen and (min-device-width:640px) {
+  .topBuffer{
+    padding: 90px;
+}
+}
+
+.h1{
+    align-items: center;
+    justify-content: center;
+  }
   
+  .a{
+    padding: 10px;
+  }
+  
+  .AppCenter{
+    padding-left: 10%;
+    padding-right:10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  
+  .bio{
+    padding-top: 18vmax;
+  }
+  
+  body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color:#282c34;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    /* font-size: inherit; */
+    color:#282c34;
+   }
+  
+
+  .img{
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+    position: relative;
+    top: 50%;
+  
+    transform: translateY(-50%);
+    object-fit: cover;
+  }
+  
+  .scroller:active{
+   
+  }
+  
+  .product-desc{
+    width: 100%;
+    min-height: 220px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    /* background-color: aquamarine; */
+  }
+  
+  .cart {
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    margin:15px;
+    width: 25%;
+    justify-content: left;
+    text-align: left;
+    min-width: 200px;
+    width: 20vmax;
+    height: 150%;
+    border-color: rgb(60, 174, 255);
+    /* border-color: #2468b0; */
+    border-width: 2px;
+    border-style: solid;
+    justify-content: left;
+  }
+  
+  .mainApp {
+    align-items: center;
+  }
+  
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+  .NavBar {
+    /* background-color: aqua; */
+    /* height: 10px; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    /* padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 6%;
+    padding-bottom: 6%; */
+    align-items: center;
+    background-color: #c6ff54;
+    background-color: #FFFFFF;
+    padding: '60px 100px 10px 100px'; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    top: 0; /* At the top */
+    z-index: 99;
+    box-sizing: border-box;
+    height: var(--nav-height)
+  }
+  
+  .NavButtons{
+    display: flex;
+    align-items:center;
+    margin:10px;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  
+  /* CSS */
+  .button {
+    background-color: white;
+    border: 1px solid #3c4043;
+    /* border-radius: 4px; */
+    color: #282c34;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    border-color: #b7b7b7;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #868686;
+  }
+  
+  
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .workGallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-self: center;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+  }
+  
+  .Project{
+    padding:30px;
+    margin:15px;
+    width: 30%;
+    /* height:  */
+    /* border-radius: 1vmin; */
+    border-color:#cbcbcb;
+    border-width: 2px;
+    border-style: solid;
+    justify-content: space-between;
+    /* background-color:  */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #282c34;
+  }
+  
+  .p{
+    overflow-wrap: normal;
+  }
+  
+  .cartItem{
+    height: fit-content;
+    padding: 5px;
+    /* border-color: rgb(60, 174, 255);
+    border-width: 2px;
+    border-style: solid; */
+    justify-content: left;
+    
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .cartImage{
+    height: 30px;
+    width: 30px;
+    object-fit:scale-down;
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+
+  html { position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: auto; }
+  body { width: 100%; height: auto; }
+  
+ 
+
+  /* from index.css */
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+
+
+  
+  .projectDescription{
+    margin: 2vh 20vw; 
+    padding-bottom: 5vh;
+  }
+
+
+  .column-three {
+    float: left;
+    width: 27%;
+  
+    padding: 3%;
+  }
+
+
+
+  
+@media screen and (max-device-width:640px) {
+  .workGallery{
+    width:auto;
+  }
+
+  .Project{
+    width: 50%;
+  }
+
+  .bio{
+    padding-top: 2vmax;
+  }
+
+  .Project{
+    width: 90%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    /* font-size: max(inherit,10pt); */
+    color:#282c34;
+   }
+  body, p{
+    font-size: min(initial,10pt);
+  }
+
+  .topBuffer{
+      padding: 50px;
+  }
+
+  .button{
+    font-size: min(inherit,10pt);
+  }
+
 }
