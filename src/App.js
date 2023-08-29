@@ -13,7 +13,7 @@ import SustainableInfrastructure from './project-pages/SustainableInfrastructure
 
 
 import React, { Component } from 'react';
-import { Switch, BrowserRouter,Router, Route, Routes, Navigation, Link } from 'react-router-dom';
+import { Switch, HashRouter,Router, Route, Routes, Navigation, Link } from 'react-router-dom';
 
 
 // Just the page router
@@ -22,21 +22,21 @@ class App extends Component{
     return (   
       <div>
        
-      <BrowserRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
+      <HashRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
         {NavBar}
         <Routes>
           <Route path="/" element={Home}/>  
           <Route path="portfolio" element={Home}/>
-          <Route path="portfolio/about" element={About}/> 
-          <Route path="portfolio/buildazoo" element={BuildAZoo}/>  
-          <Route path="portfolio/eggproblem" element={EggProblem}/>  
+          <Route path="about" element={About}/> 
+          <Route path="buildazoo" element={BuildAZoo}/>  
+          <Route path="eggproblem" element={EggProblem}/>  
           <Route path="portfolio/mars" element={Mars}/>  
           <Route path="portfolio/belgianembassy" element={BelgianEmbassy}/>  
           <Route path="portfolio/nftscoring" element={NFTScoring}/>  
           <Route path="portfolio/selfcheckout" element={SelfCheckout}/>  
           <Route path="portfolio/sustainableinfrastructure" element={SustainableInfrastructure}/>  
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
     );
   }
