@@ -1,12 +1,12 @@
 
-import Resp from "src/assets/projecticons/Responsive.png"
-import It from "../assets/projecticons/Iterative.png"
-import Pers from "../assets/projecticons/Personas.png"
-import Dev from "../assets/projecticons/Development.png"
-import Mat from "../assets/projecticons/Cleanmaterials.png"
-import Egg from '../assets/projecticons/Egg.png'
-import Mars from '../assets/projecticons/Marscreenshot.png'
-import Carton from '../assets/projecticons/Carton.jpeg'
+import Resp from "projecticons/Responsive.png"
+import It from "projecticons/Iterative.png"
+import Pers from "projecticons/Personas.png"
+import Dev from "projecticons/Development.png"
+import Mat from "projecticons/Cleanmaterials.png"
+import Egg from 'projecticons/Egg.png'
+import Mars from 'projecticons/Marscreenshot.png'
+import Carton from 'projecticons/Carton.jpeg'
 
 const Projects = [
 
