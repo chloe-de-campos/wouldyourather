@@ -24,18 +24,18 @@ class App extends Component{
        
       <HashRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
         {NavBar}
-        <Routes>
+        <Switch>
           <Route path="/" element={Home}/>  
           <Route path="portfolio" element={Home}/>
           <Route path="about" element={About}/> 
           <Route path="buildazoo" element={BuildAZoo}/>  
           <Route path="eggproblem" element={EggProblem}/>  
-          <Route path="portfolio/mars" element={Mars}/>  
-          <Route path="portfolio/belgianembassy" element={BelgianEmbassy}/>  
-          <Route path="portfolio/nftscoring" element={NFTScoring}/>  
-          <Route path="portfolio/selfcheckout" element={SelfCheckout}/>  
-          <Route path="portfolio/sustainableinfrastructure" element={SustainableInfrastructure}/>  
-        </Routes>
+          <Route path="mars" element={Mars}/>  
+          <Route path="belgianembassy" element={BelgianEmbassy}/>  
+          <Route path="nftscoring" element={NFTScoring}/>  
+          <Route path="selfcheckout" element={SelfCheckout}/>  
+          <Route path="sustainableinfrastructure" element={SustainableInfrastructure}/>  
+        </Switch>
       </HashRouter>
     </div>
     );
