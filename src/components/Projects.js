@@ -1,5 +1,5 @@
 
-import Resp from "../assets/projecticons/Responsive.png"
+import Resp from "src/assets/projecticons/Responsive.png"
 import It from "../assets/projecticons/Iterative.png"
 import Pers from "../assets/projecticons/Personas.png"
 import Dev from "../assets/projecticons/Development.png"
