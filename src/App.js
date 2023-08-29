@@ -22,7 +22,7 @@ class App extends Component{
     return (   
       <div>
        
-      <BrowserRouter style={"width: 100%"}>
+      <BrowserRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
         {NavBar}
         <Routes>
           <Route path="/" element={Home}/>  
