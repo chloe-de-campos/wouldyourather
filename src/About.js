@@ -9,6 +9,7 @@ const About = () => {
         <div className="mainApp"> 
         
             <div className="AppCenter">
+               
 
                  <div style={{"margin": "30% 15% 10% 15%"}} id="about!">
                     <div>
