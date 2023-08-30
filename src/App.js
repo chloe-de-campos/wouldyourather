@@ -31,14 +31,15 @@ class App extends Component{
           <Routes>
             <Route exact path="/" element={Home}/>  
             {/* <Route path="/portfolio" element={Home}/> */}
-            <Route path="/about" element={About}/> 
-            <Route path="/buildazoo" element={BuildAZoo}/>  
-            <Route path="/eggproblem" element={EggProblem}/>  
-            <Route path="/mars" element={Mars}/>  
-            <Route path="/belgianembassy" element={BelgianEmbassy}/>  
-            <Route path="/nftscoring" element={NFTScoring}/>  
-            <Route path="/selfcheckout" element={SelfCheckout}/>  
-            <Route path="/sustainableinfrastructure" element={SustainableInfrastructure}/>  
+            <Route exact path="/about" element={About}/> 
+            <Route exact path="/buildazoo" element={BuildAZoo}/>  
+            <Route exact path="/eggproblem" element={EggProblem}/>  
+            <Route exact path="/mars" element={Mars}/>  
+            <Route exact path="/belgianembassy" element={BelgianEmbassy}/>  
+            <Route exact path="/nftscoring" element={NFTScoring}/>  
+            <Route exact path="/selfcheckout" element={SelfCheckout}/>  
+            <Route exact path="/sustainableinfrastructure" element={SustainableInfrastructure}/>  
+            <Route element={About}/>  
           </Routes>
           {/* </div> */}
         </HashRouter>
