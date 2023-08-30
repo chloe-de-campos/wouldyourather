@@ -13,30 +13,36 @@ import SustainableInfrastructure from './project-pages/SustainableInfrastructure
 
 
 import React, { Component } from 'react';
-import { Switch, HashRouter,Router, Route, Routes, Navigation, Link } from 'react-router-dom';
+import { Switch, BrowserRouter, HashRouter,Router, Route, Routes, Navigation, Link } from 'react-router-dom';
 
 
 // Just the page router
 class App extends Component{
+  
   render() {
+    console.log(process.env.PUBLIC_URL)
     return (   
       <div>
        
-      <HashRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
-        {NavBar}
-        <Routes>
-          <Route path="/" element={Home}/>  
-          <Route path="/portfolio" element={Home}/>
-          <Route path="/about" element={About}/> 
-          <Route path="/buildazoo" element={BuildAZoo}/>  
-          <Route path="/eggproblem" element={EggProblem}/>  
-          <Route path="/mars" element={Mars}/>  
-          <Route path="/belgianembassy" element={BelgianEmbassy}/>  
-          <Route path="/nftscoring" element={NFTScoring}/>  
-          <Route path="/selfcheckout" element={SelfCheckout}/>  
-          <Route path="/sustainableinfrastructure" element={SustainableInfrastructure}/>  
-        </Routes>
-      </HashRouter>
+      {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+        <HashRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
+          {NavBar}
+          {/* <div> */}
+          <Routes>
+            <Route exact path="/" element={Home}/>  
+            <Route path="/portfolio" element={Home}/>
+            <Route path="/about" element={About}/> 
+            <Route path="/buildazoo" element={BuildAZoo}/>  
+            <Route path="/eggproblem" element={EggProblem}/>  
+            <Route path="/mars" element={Mars}/>  
+            <Route path="/belgianembassy" element={BelgianEmbassy}/>  
+            <Route path="/nftscoring" element={NFTScoring}/>  
+            <Route path="/selfcheckout" element={SelfCheckout}/>  
+            <Route path="/sustainableinfrastructure" element={SustainableInfrastructure}/>  
+          </Routes>
+          {/* </div> */}
+        </HashRouter>
+      {/* </BrowserRouter> */}
     </div>
     );
   }
