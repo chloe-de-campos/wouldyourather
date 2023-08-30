@@ -25,12 +25,12 @@ class App extends Component{
       <div>
        
       {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
-        <HashRouter basename={process.env.PUBLIC_URL} style={"width: 100%"}>
+        <HashRouter style={"width: 100%"}>
           {NavBar}
           {/* <div> */}
           <Routes>
             <Route exact path="/" element={Home}/>  
-            <Route path="/portfolio" element={Home}/>
+            {/* <Route path="/portfolio" element={Home}/> */}
             <Route path="/about" element={About}/> 
             <Route path="/buildazoo" element={BuildAZoo}/>  
             <Route path="/eggproblem" element={EggProblem}/>  
