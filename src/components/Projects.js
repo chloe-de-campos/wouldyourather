@@ -10,16 +10,18 @@ import Carton from './projecticons/Carton.jpeg'
 
 const Projects = [
 
-    {"name": "Build a Zoo",
-    "link": "BuildAZoo",
-    "image": Dev,
-    "desc": "An interactive webpage using React.js" ,
-    },
+    
 
     {"name": "The Egg Problem",
     "link": "EggProblem",
     "image": Carton,
     "desc": "Interactive web design to visualize a math problem" ,
+    },
+
+    {"name": "Build a Zoo",
+    "link": "BuildAZoo",
+    "image": Dev,
+    "desc": "An interactive webpage using React.js" ,
     },
 
     {"name": "Mars",

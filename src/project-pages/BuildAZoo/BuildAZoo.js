@@ -26,7 +26,7 @@ const BuildAZoo = ()  => {
                 It offers wacky sort and filter features, which can be layered on top of eachother for users to quickly narrow their search through the catalogue.
 
                     
-                <p>Click <a href="https://sdpy695.github.io/Development/">here</a> to find some animals for your own zoo.</p> 
+                <p>Click <a target= "_blank" href="https://sdpy695.github.io/Development/">here</a> to find some animals for your own zoo.</p> 
 
                 <button className="button" onClick={() => navigate(-1)} type="button">
             Return to Projects</button>

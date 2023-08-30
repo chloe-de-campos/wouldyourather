@@ -11,6 +11,7 @@ import NFTScoring from './project-pages/NFTScoring/NFTScoring.js'
 import SelfCheckout from './project-pages/SelfCheckout/SelfCheckout.js'
 import SustainableInfrastructure from './project-pages/SustainableInfrastructure/SustainableInfrastructure.js'
 
+import ScrollToTop from './components/ScrollToTop'
 
 import React, { Component } from 'react';
 import { Switch, BrowserRouter, HashRouter,Router, Route, Routes, Navigation, Link } from 'react-router-dom';
@@ -25,7 +26,9 @@ class App extends Component{
       <div>
        
       {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+      
         <HashRouter style={"width: 100%"}>
+          <ScrollToTop/>
           {NavBar}
           {/* <div> */}
           <Routes>

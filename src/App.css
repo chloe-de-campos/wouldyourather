@@ -8,10 +8,9 @@ element {
 img {
   object-fit:fill;
   max-height: 100%;
-   
   width: auto; 
   max-width: 100%;
-  height: min-content;
+  /* height: min-content; */
   top: 0;
   bottom: 0;
   left: 0;
@@ -44,7 +43,7 @@ img {
 
 @media screen and (min-device-width:640px) {
   .topBuffer{
-    padding: 90px;
+    padding: 110px;
 }
 }
 
@@ -324,7 +323,7 @@ img {
   
 @media screen and (max-device-width:640px) {
   .workGallery{
-    width:auto;
+    width: auto;
   }
 
   .Project{

@@ -55,20 +55,20 @@ const NFTScoring = ()  => {
 
                 <div style={{paddingTop: "10%", display: "grid", gridTemplateColumns: "30% 30% 30%"}}>
                     
-                    <div className="project-image"> <img style={{width: "70%", margin: "5%"}} src={require("./low-fi/Discover.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Discover.png")}/> </div>
 
-                    <div className="project-image"> <img style={{width: "70%", margin: "5%"}} src={require("./low-fi/Home.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Home.png")}/> </div>
 
-                    <div className="project-image"> <img style={{width: "70%", margin: "5%"}} src={require("./low-fi/Learning.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Learning.png")}/> </div>
 
                     
 
-                    <div className="project-image"> <img style={{width: "70%", margin: "5%"}} src={require("./low-fi/NFT.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/NFT.png")}/> </div>
 
 
-                    <div className="project-image"> <img style={{width: "70%", margin: "5%"}} src={require("./low-fi/Profile.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Profile.png")}/> </div>
         
-                    <div className="project-image"> <img style={{width: "70%", margin: "5%"}} src={require("./low-fi/Wallet lofi.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Wallet lofi.png")}/> </div>
                     
                 </div> 
                 

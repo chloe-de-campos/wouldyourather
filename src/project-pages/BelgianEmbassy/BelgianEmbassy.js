@@ -15,7 +15,7 @@ const BuildAZoo = ()  => {
             <div className="topBuffer"> </div>
             <div className="projectDescription">
                 
-                <h2>The Belgian Embassy</h2>
+                <h2>Redesigning The Belgian Embassy</h2>
                 Currently, the biggest resource for for Beglian-American expats is <a href="https://unitedstates.diplomatie.belgium.be/en">the website</a> for the Belgian Embassy and Consulates in the United States. 
               However, the information on the current website is disorganized and difficult to view on a mobile device. I reimagined the page to be more accessible. 
 
@@ -28,7 +28,7 @@ const BuildAZoo = ()  => {
          
 
                 <h3>The First Redesign</h3>
-                <h5>1. Low-Fi Prototyping</h5> 
+                <h3>1. Low-Fi Prototyping</h3> 
 
                 <p>These prototypes block out how the layout can be designed to adapt to different screen sizes</p>
             
@@ -37,7 +37,7 @@ const BuildAZoo = ()  => {
                     <img src={require("./annotated-lowfi-laptop.png")}/> 
                 </div>
 
-                <h5>2. Hi-Fi Prototyping</h5> 
+                <h3>2. Hi-Fi Prototyping</h3> 
 
                 <p>These protoypes flesh out the feel of the website, sorting the information by target audience and using heirarchies of heading sizes to encourage users to quickly skim the page and find the information they're searching for.</p> 
 
@@ -46,12 +46,12 @@ const BuildAZoo = ()  => {
                     <img src={require("./annotated-hifi-mobile.png")}/> 
                 </div>
 
-                <h5>3. First Draft</h5> 
+                <h3>3. First Draft</h3> 
                 
                 <p>The <a href="https://sdpy695.github.io/Responsive-Redesign/" target="_blank">first design</a> is a dummy page made using html and css which is displayed in a more accessible way and can responsively adapt to screen resizing.</p>
 
 
-                <h5>4. Reflection</h5> 
+                <h3>4. Reflection</h3> 
                 <p>Returning to this design with more experience, I noticed ways the functionality could be improved and the design could be less... ugly. I kicked off a redesign of the redesign. </p>
 
                 <p>
