@@ -21,7 +21,7 @@ import About from '../About.js'
 
 const NavBar= () => {
 
-  const [padding, setPadding] = useState('60px 100px 10px 100px');
+  const [padding, setPadding] = useState('60px 100px 0px 100px');
 
   window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
@@ -46,7 +46,7 @@ const NavBar= () => {
   if(window.matchMedia("(min-width: 600px)").matches){
     return (
       <div style={{padding:padding}} className="NavBar">
-         <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(1.375rem + 2vw)", "padding":"10px"}} href="https://sdpy695.github.io/#/UI-Portfolio-4/">Chloe de Campos</h1></NavLink>
+         <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(1.375rem + 2vw)"}} href="https://sdpy695.github.io/#/UI-Portfolio-4/">Chloe de Campos</h1></NavLink>
         <div className="NavButtons">
       
         <Button title="link me in" style={{"margin": "10px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">

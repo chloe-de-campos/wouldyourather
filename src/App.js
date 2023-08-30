@@ -21,7 +21,6 @@ import { Switch, BrowserRouter, HashRouter,Router, Route, Routes, Navigation, Li
 class App extends Component{
   
   render() {
-    console.log(process.env.PUBLIC_URL)
     return (   
       <div>
        

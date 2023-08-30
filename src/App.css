@@ -7,7 +7,7 @@ element {
 
 img {
   object-fit:fill;
-  max-height: 100%;
+  /* max-height: 100%; */
   width: auto; 
   max-width: 100%;
   /* height: min-content; */
@@ -94,10 +94,7 @@ img {
     transform: translateY(-50%);
     object-fit: cover;
   }
-  
-  .scroller:active{
-   
-  }
+
   
   .product-desc{
     width: 100%;
@@ -158,7 +155,7 @@ img {
     align-items: center;
     background-color: #c6ff54;
     background-color: #FFFFFF;
-    padding: '60px 100px 10px 100px'; /* Large padding which will shrink on scroll (using JS) */
+    padding: '10px 100px 10px 100px'; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     top: 0; /* At the top */
