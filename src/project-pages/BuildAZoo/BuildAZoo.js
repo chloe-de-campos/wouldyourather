@@ -15,8 +15,8 @@ const BuildAZoo = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-                
-                <h2 style={{marginTop: "5%"}}>Build a Zoo</h2>
+                <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>November 2022</p>
+                <h2 >Build a Zoo</h2>
                 <p>Statistically speaking, 94% of zookeepers struggle with online shopping for new animals. The most common complaint is that the options are presented in an overwhelming manner, without an easy way to narrow the search. The only reasonable solution to this issue is a one stop online shop for all zoo animals, featuring relevant filter and sort categories such as the animal's diet, or the number of legs on the animal. </p>
 
                 <p>I'm kidding. This is an exercise in using React.js to display data dynamically on a webpage, mimicking an online shopping interface. </p>

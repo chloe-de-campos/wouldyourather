@@ -14,8 +14,11 @@ const SelfCheckout = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-                
-                <h2 style={{marginTop: "5%"}}>Self Checkout</h2>
+
+            <button className="button" onClick={() => navigate(-1)} type="button">
+                Return to Projects</button>
+            <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>September 2022</p>
+                <h2>Self Checkout</h2>
                 <h3>The Interface</h3>
 
                 <p>The self checkout machine allows more customers to pay at once without requiring more staff. The interface is an evolution of the cashier-manned checkout, with the scanning system and payment system both oriented to face the customer.</p>

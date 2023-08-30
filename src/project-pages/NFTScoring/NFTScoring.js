@@ -14,8 +14,8 @@ const NFTScoring = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-                
-                <h2 style={{marginTop: "5%"}}>NFTScoring</h2>
+            <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>November 2022</p>
+                <h2>NFTScoring</h2>
                 <p>NFTScoring is an emerging startup with the goal of giving NFT investors all the information needed in order to make smart decisions when buying or selling NFTs. Their NFT trading platform also offers opportunities for users to learn, providing educational resources about making informed decisions on the market.
                 </p>
 

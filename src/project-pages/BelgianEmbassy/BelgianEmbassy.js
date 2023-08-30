@@ -14,8 +14,8 @@ const BuildAZoo = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-                
-                <h2>Redesigning The Belgian Embassy</h2>
+                <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>October 2022</p>
+                <h2>Redesigning The Belgian Embassy Webpage</h2>
                 Currently, the biggest resource for for Beglian-American expats is <a href="https://unitedstates.diplomatie.belgium.be/en">the website</a> for the Belgian Embassy and Consulates in the United States. 
               However, the information on the current website is disorganized and difficult to view on a mobile device. I reimagined the page to be more accessible. 
 

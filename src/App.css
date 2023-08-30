@@ -43,8 +43,11 @@ img {
 
 @media screen and (min-device-width:640px) {
   .topBuffer{
-    padding: 110px;
-}
+    padding: 70px;
+  }
+  .Project{
+    width: 30%;
+  }
 }
 
 .h1{
@@ -304,7 +307,7 @@ img {
   
   .projectDescription{
     margin: 2vh 20vw; 
-    padding-bottom: 5vh;
+    padding-bottom: 20vh;
   }
 
 
@@ -321,10 +324,6 @@ img {
 @media screen and (max-device-width:640px) {
   .workGallery{
     width: auto;
-  }
-
-  .Project{
-    width: 50%;
   }
 
   .bio{
@@ -344,7 +343,7 @@ img {
   }
 
   .topBuffer{
-      padding: 50px;
+      padding: 45px;
   }
 
   .button{

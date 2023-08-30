@@ -21,15 +21,15 @@ import About from '../About.js'
 
 const NavBar= () => {
 
-  const [padding, setPadding] = useState('60px 100px 0px 100px');
+  const [padding, setPadding] = useState('40px 14% 10px 14%');
 
   window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 80) {
-        setPadding('10px 30px')
+        setPadding('0px 7%')
 
       } else {
-        setPadding('60px 100px 10px 100px')
+        setPadding('40px 14% 10px 14%')
       }
     }
    
@@ -46,7 +46,7 @@ const NavBar= () => {
   if(window.matchMedia("(min-width: 600px)").matches){
     return (
       <div style={{padding:padding}} className="NavBar">
-         <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(1.375rem + 2vw)"}} href="https://sdpy695.github.io/#/UI-Portfolio-4/">Chloe de Campos</h1></NavLink>
+         <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(3vw)"}} href="https://sdpy695.github.io/#/UI-Portfolio-4/">Chloe de Campos</h1></NavLink>
         <div className="NavButtons">
       
         <Button title="link me in" style={{"margin": "10px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
@@ -57,7 +57,7 @@ const NavBar= () => {
           {/* Email  */}
           <EmailIcon/>
         </Button>
-        <Button title="see my cartoons" style={{"margin": "10px"}} target="_blank" onClick={openAbout}>
+        <Button title="about me" style={{"margin": "10px"}} onClick={openAbout}>
           {/* About */}
           <PersonIcon/>
         </Button>
@@ -77,10 +77,25 @@ const NavBar= () => {
   else{
     return (
       <div style={{justifyContent:'center', padding:'1%',}} id="NavBar" className="NavBar">
-          <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(1.375rem + 2vw)", "padding":"10px"}} href="">Chloe de Campos</h1></NavLink>
-
-        <img ></img>
+          <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(4vw)", "padding":"10px"}} href="">Chloe de Campos</h1></NavLink>
+          <div className="NavButtons">
+      
+        <Button title="link me in" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
+          {/* Link me in */}
+          <LinkedInIcon/>
+        </Button>
+        <Button title="email me" style={{"margin": "-3px", padding: "1px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
+          {/* Email  */}
+          <EmailIcon/>
+        </Button>
+        <Button title="about me" style={{"margin": "-3px", padding: "1px"}} onClick={openAbout}>
+          {/* About */}
+          <PersonIcon/>
+        </Button>
+        </div>
        </div>        
+
+       
     )
   }
   

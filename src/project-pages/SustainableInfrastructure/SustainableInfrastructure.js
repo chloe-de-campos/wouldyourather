@@ -14,8 +14,8 @@ const SustainableInfrastructure = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-                
-                <h2 style={{marginTop: "5%"}}>The Center for Sustainable Infrastructure</h2>
+            <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>July 2021</p>
+                <h2>The Center for Sustainable Infrastructure</h2>
                 <div>
           
 	        
@@ -63,7 +63,7 @@ const SustainableInfrastructure = ()  => {
                 </div>
 
                 <button className="button" onClick={() => navigate(-1)} type="button">
-            Return to Projects</button>
+                Return to Projects</button>
             </div> 
         </div>
        

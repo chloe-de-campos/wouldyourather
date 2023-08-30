@@ -17,7 +17,9 @@ const EggProblem = ()  => {
             <div class="projectDescription">
             
                 <div>
-                <h2 style={{marginTop: "5%"}}>The Egg Problem</h2>
+                <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>February 2023</p>
+                <h2>The Egg Problem</h2>
+                
                 <p>Do you ever get so wrapped up in a riddle that you can't think about anything else until you've solved it? After watching my friends spread one nasty problem between themselves like a virus, I built a web app to help them visualize and discuss solutions.</p>
                 
                 <h4>That One Nasty Problem</h4>
