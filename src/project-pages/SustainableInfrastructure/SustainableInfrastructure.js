@@ -14,13 +14,13 @@ const SustainableInfrastructure = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-            <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>July 2021</p>
+            <p className="date">July 2021</p>
                 <h2>The Center for Sustainable Infrastructure</h2>
                 <div>
           
 	        
                 <p>
-                In the spring and summer of 2021, I intered at the Center for Sustainable Infrastructrue in Olympia, Washington. These are graphics I designed to illustrate the industrial systems and problem-solving approaches they were developing. Check out their <a href="https://www.sustaininfrastructure.org/impact">2021 Impact Report</a> to see my published work. 
+                In the spring and summer of 2021, I intered at the Center for Sustainable Infrastructrue in Olympia, Washington. These are graphics I designed to illustrate the industrial systems and problem-solving approaches they were developing. 
                 </p>
         
                 </div>
@@ -61,6 +61,8 @@ const SustainableInfrastructure = ()  => {
                         <img src={require("./renewable hydrogen txt.png")}/>
                     </div>
                 </div>
+
+                <p>Check out the <a href="https://www.sustaininfrastructure.org/impact">2021 Impact Report</a> to see my published work. </p>
 
                 <button className="button" onClick={() => navigate(-1)} type="button">
                 Return to Projects</button>

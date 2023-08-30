@@ -14,7 +14,7 @@ const NFTScoring = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-            <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>November 2022</p>
+            <p className="date">November 2022</p>
                 <h2>NFTScoring</h2>
                 <p>NFTScoring is an emerging startup with the goal of giving NFT investors all the information needed in order to make smart decisions when buying or selling NFTs. Their NFT trading platform also offers opportunities for users to learn, providing educational resources about making informed decisions on the market.
                 </p>
@@ -57,18 +57,15 @@ const NFTScoring = ()  => {
                     
                     <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Discover.png")}/> </div>
 
-                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Home.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "30%", margin: "5%"}} src={require("./low-fi/Home.png")}/> </div>
 
-                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Learning.png")}/> </div>
-
+                    <div className="project-image"> <img style={{width: "30%", margin: "5%"}} src={require("./low-fi/Learning.png")}/> </div>
                     
+                    <div className="project-image"> <img style={{width: "30%", margin: "5%"}} src={require("./low-fi/NFT.png")}/> </div>
 
-                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/NFT.png")}/> </div>
-
-
-                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Profile.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "30%", margin: "5%"}} src={require("./low-fi/Profile.png")}/> </div>
         
-                    <div className="project-image"> <img style={{width: "40%", margin: "5%"}} src={require("./low-fi/Wallet lofi.png")}/> </div>
+                    <div className="project-image"> <img style={{width: "30%", margin: "5%"}} src={require("./low-fi/Wallet lofi.png")}/> </div>
                     
                 </div> 
                 
@@ -91,7 +88,7 @@ const NFTScoring = ()  => {
                     <img style={{width: "35%"}} src={require("./iterativeflow.gif")} />
                 </div>
 
-                <p>Click <a href="https://www.figma.com/proto/Q6Pmr6BzSpfLwdcOo2LStB/NFTScoring-Final-Draft?page-id=1077%3A2176&node-id=1077%3A2730&viewport=1113%2C818%2C0.42&scaling=scale-down&starting-point-node-id=1077%3A2730&show-proto-sidebar=1">here</a> to interact with the mockup yourself.</p>
+                <p><a target="_blank" href="https://www.figma.com/proto/Q6Pmr6BzSpfLwdcOo2LStB/NFTScoring-Final-Draft?page-id=1077%3A2176&node-id=1077%3A2730&viewport=1113%2C818%2C0.42&scaling=scale-down&starting-point-node-id=1077%3A2730&show-proto-sidebar=1">Interact with the mockup yourself</a>.</p>
                 
 
                 <button className="button" onClick={() => navigate(-1)} type="button">

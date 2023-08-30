@@ -4,7 +4,12 @@ element {
   --nav-height: 150px;
 }
 
-
+.date{
+  padding-top: 10px;
+  margin-bottom: -15px;
+  font-weight: 400;
+  font-size:8pt;
+}
 img {
   object-fit:fill;
   /* max-height: 100%; */

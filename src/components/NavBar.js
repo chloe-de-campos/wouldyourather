@@ -14,6 +14,7 @@ import * as React from 'react';
 
 import { NavLink } from 'react-router-dom';
 import About from '../About.js'
+import { GitHub } from '@mui/icons-material';
 
 
 
@@ -49,27 +50,23 @@ const NavBar= () => {
          <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(3vw)"}} href="https://sdpy695.github.io/#/UI-Portfolio-4/">Chloe de Campos</h1></NavLink>
         <div className="NavButtons">
       
-        <Button title="link me in" style={{"margin": "10px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
+        <Button title="link me in" style={{"margin": "0px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
           {/* Link me in */}
-          <LinkedInIcon/>
+          <LinkedInIcon style={{width:"20px", margin:"0px", padding:"0px"}} />
         </Button>
-        <Button title="email me" style={{"margin": "10px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
+        <Button title="email me" style={{"margin": "0px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
           {/* Email  */}
-          <EmailIcon/>
+          <EmailIcon style={{width:"20px", margin:"0px", padding:"0px"}} />
         </Button>
-        <Button title="about me" style={{"margin": "10px"}} onClick={openAbout}>
+        <Button title="about me" style={{"margin": "0px"}} onClick={openAbout}>
           {/* About */}
-          <PersonIcon/>
+          <PersonIcon style={{width:"20px", margin:"0px", padding:"0px"}} />
         </Button>
-        {/* <Button style={{"margin": "10px"}} onClick={() => alert("link intentionally broken for anonymization")}>link me in</Button>
-        <Button style={{"margin": "10px"}} onClick={() => alert("link intentionally broken for anonymization")}>see my cartoons</Button> */}
-        {/* <a style={{"padding": "10px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">Email me</a>
-        <a style={{"padding": "10px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">Link me in</a>
-        <a style={{"padding": "10px"}} target="_blank"  href="https://www.instagram.com/stink.lines/">Look at my cartoons</a> */}
-          {/* <NavLink to="/Responsive-Redesign">ResponsiveRedesign</NavLink> */}
-          {/* <a style={{"padding": "10px"}} href="">Work</a>
-          <a style={{"padding": "10px"}} href="">Contact</a> */}
-  
+        <Button title="my github" style={{"margin": "0px"}} target="_blank" href="https://github.com/chloe-de-campos/">
+          {/* My Github*/}
+          <GitHub style={{width:"20px", margin:"0px", padding:"0px"}} />
+        </Button>
+       
         </div>
        </div>        
     )
@@ -78,20 +75,26 @@ const NavBar= () => {
     return (
       <div style={{justifyContent:'center', padding:'1%',}} id="NavBar" className="NavBar">
           <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(4vw)", "padding":"10px"}} href="">Chloe de Campos</h1></NavLink>
-          <div className="NavButtons">
-      
-        <Button title="link me in" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
-          {/* Link me in */}
-          <LinkedInIcon/>
-        </Button>
-        <Button title="email me" style={{"margin": "-3px", padding: "1px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
-          {/* Email  */}
-          <EmailIcon/>
-        </Button>
-        <Button title="about me" style={{"margin": "-3px", padding: "1px"}} onClick={openAbout}>
-          {/* About */}
-          <PersonIcon/>
-        </Button>
+                <div className="NavButtons">
+            
+                <Button title="link me in" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
+                {/* Link me in */}
+                    <LinkedInIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
+                </Button>
+                <Button title="email me" style={{"margin": "-3px", padding: "1px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
+                {/* Email  */}
+                    <EmailIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
+                </Button>
+                <Button title="about me" style={{"margin": "-3px", padding: "1px"}} onClick={openAbout}>
+                {/* About */}
+                    <PersonIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
+                </Button>
+            
+                <Button title="my github" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://github.com/chloe-de-campos/">
+                {/* My Github*/}
+                    <GitHub style={{width:"20px", margin:"0px", padding:"0px"}} />
+                </Button>
+            
         </div>
        </div>        
 

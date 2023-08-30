@@ -17,7 +17,7 @@ const SelfCheckout = ()  => {
 
             <button className="button" onClick={() => navigate(-1)} type="button">
                 Return to Projects</button>
-            <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>September 2022</p>
+            <p className="date">September 2022</p>
                 <h2>Self Checkout</h2>
                 <h3>The Interface</h3>
 

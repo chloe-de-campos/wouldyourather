@@ -17,7 +17,7 @@ const EggProblem = ()  => {
             <div class="projectDescription">
             
                 <div>
-                <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>February 2023</p>
+                <p className="date">February 2023</p>
                 <h2>The Egg Problem</h2>
                 
                 <p>Do you ever get so wrapped up in a riddle that you can't think about anything else until you've solved it? After watching my friends spread one nasty problem between themselves like a virus, I built a web app to help them visualize and discuss solutions.</p>
@@ -28,7 +28,7 @@ const EggProblem = ()  => {
                 <h4>The Simulator</h4>
                 <p>My tool provides riddlers with a drag-and-drop interface to explore possible approaches to the problem. The simulator secretly designates one bad egg. Then users can practice weighing different combinations of eggs against eachother, with the results of each measurement recorded and displayed at the bottom. When a user thinks they've found the egg, they can check their results against the simulator.</p>
 
-                <a href="https://chloe-de-campos.github.io/the-egg-problem/" target="_blank">Click here</a> to solve the egg problem yourself 😇. 
+                <a href="https://chloe-de-campos.github.io/the-egg-problem/" target="_blank">Solve the egg problem yourself 😇</a>.
 
                 </div>
                 <button className="button" onClick={() => navigate(-1)} type="button">

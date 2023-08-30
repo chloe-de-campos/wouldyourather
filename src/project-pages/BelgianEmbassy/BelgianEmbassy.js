@@ -14,7 +14,7 @@ const BuildAZoo = ()  => {
         <div>
             <div className="topBuffer"> </div>
             <div className="projectDescription">
-                <p style={{paddingTop: "10px",marginBottom:"-15px", fontWeight:"400"}}>October 2022</p>
+                <p className="date">October 2022</p>
                 <h2>Redesigning The Belgian Embassy Webpage</h2>
                 Currently, the biggest resource for for Beglian-American expats is <a href="https://unitedstates.diplomatie.belgium.be/en">the website</a> for the Belgian Embassy and Consulates in the United States. 
               However, the information on the current website is disorganized and difficult to view on a mobile device. I reimagined the page to be more accessible. 
@@ -69,7 +69,7 @@ const BuildAZoo = ()  => {
 
                 <p>On round two, I replaced the button-only interface with images and a search bar to make the page more dynamic, and added some javascript to help the page scale more fluidly. </p>
 
-                <p>Click <a href="updated rr/index.html" target="_blank">here</a> to view the new update. </p> 
+                <p><a href="updated rr/index.html" target="_blank">View the new update</a>.</p> 
 
                 <button className="button" onClick={() => navigate(-1)} type="button">
             Return to Projects</button>
