@@ -10,7 +10,7 @@ const About = () => {
          <div className="projectDescription">
             
                <h2>Hey,</h2>
-               <p>I'm Chloe. </p>    
+               <p>I'm Chloe.</p>    
 
                {/* <p>
                "Embracing the boundless realm of learning while still young enough to blame errors on caffeine deficiency. They say youth is wasted on the young, but I'm too busy Googling error codes to care. and perfecting my junior web designer finesse to care. Life's a crash course, and I'm the debugger turned design aficionado – creating digital art with a touch of code and a dash of youthful enthusiasm."
