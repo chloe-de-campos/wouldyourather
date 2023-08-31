@@ -24,9 +24,8 @@ const BuildAZoo = ()  => {
                 The application allows users to look through a catalogue of zoo animals and compile a list of those they would like to purchase.
 
                 It offers wacky sort and filter features, which can be layered on top of eachother for users to quickly narrow their search through the catalogue.
-
                     
-                <p><a target= "_blank" href="https://sdpy695.github.io/Development/">Find some animals for your own zoo</a>.</p> 
+                <p><a target= "_blank" href="https://chloe-de-campos.github.io/Development/">Find some animals for your own zoo</a>.</p> 
 
                 <button className="button" onClick={() => navigate(-1)} type="button">
             Return to Projects</button>

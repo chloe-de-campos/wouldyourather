@@ -19,7 +19,7 @@ const Mars = ()  => {
 
                 <p>This stupid app is named for my brilliant friend Mars, who used to sit behind me and whose attention I really really wanted. </p>
             
-                <p><a target="_blank" href="https://sdpy695.github.io/mars/">Send a message to mars</a>.</p> 
+                <p><a target="_blank" href="https://chloe-de-campos.github.io/mars/">Send a message to mars</a>.</p> 
 
                 <button className="button" onClick={() => navigate(-1)} type="button">
                 Return to Projects</button>
