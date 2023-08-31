@@ -15,8 +15,6 @@ const SelfCheckout = ()  => {
             <div className="topBuffer"> </div>
             <div className="projectDescription">
 
-            <button className="button" onClick={() => navigate(-1)} type="button">
-                Return to Projects</button>
             <p className="date">September 2022</p>
                 <h2>Self Checkout</h2>
                 <h3>The Interface</h3>
