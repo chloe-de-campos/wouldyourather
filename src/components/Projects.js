@@ -29,6 +29,13 @@ const Projects = [
     "image": Mars,
     "desc": "An impractical communication system for students" ,
     },
+    
+    {"name": "Sustainable Infrastructure",
+    "link": "SustainableInfrastructure",
+    "image": Mat,
+    "desc": "Isometric graphic design for a non-profit" ,
+    },
+
 
     {"name": "The Belgian Embassy",
     "link": "BelgianEmbassy",
@@ -49,12 +56,7 @@ const Projects = [
     },
 
 
-    {"name": "Sustainable Infrastructure",
-    "link": "SustainableInfrastructure",
-    "image": Mat,
-    "desc": "Isometric graphic design for a non-profit" ,
-    }
-
+    
 ]
 
 export default Projects
