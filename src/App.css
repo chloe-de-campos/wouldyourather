@@ -10,6 +10,7 @@ element {
   font-weight: 400;
   font-size:8pt;
 }
+
 img {
   object-fit:fill;
   /* max-height: 100%; */
@@ -48,7 +49,7 @@ img {
 
 @media screen and (min-device-width:640px) {
   .topBuffer{
-    padding: 70px;
+    padding: 80px;
   }
   .Project{
     width: 30%;
