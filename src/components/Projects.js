@@ -18,7 +18,7 @@ const Projects = [
     "desc": "Interactive web design to visualize a math problem" ,
     },
 
-    {"name": "Build a Zoo",
+    {"name": "Buildazoo",
     "link": "BuildAZoo",
     "image": Dev,
     "desc": "An interactive webpage using React.js" ,
