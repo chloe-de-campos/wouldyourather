@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "./static/css/main.fa63c975.css",
-    "main.js": "./static/js/main.83a914ad.js",
+    "main.js": "./static/js/main.90e6c719.js",
     "static/media/iterativeflow.gif": "./static/media/iterativeflow.aa60665c970f04aae90a.gif",
     "static/media/Storyboard.jpg": "./static/media/Storyboard.404ea5dd773216250cd5.jpg",
+    "static/media/hello_man.gif": "./static/media/hello_man.3eb126af80d8c60a6c5a.gif",
     "static/media/Carton.jpeg": "./static/media/Carton.1810d9a6f427442b0f7c.jpeg",
     "static/media/renewable hydrogen txt.png": "./static/media/renewable hydrogen txt.749a70285fe2c3827be9.png",
     "static/media/Cleanmaterials.png": "./static/media/Cleanmaterials.fa516d2767b4938f6d58.png",
@@ -37,10 +38,10 @@
     "static/media/Profile.png": "./static/media/Profile.29377c0cc62304711f32.png",
     "index.html": "./index.html",
     "main.fa63c975.css.map": "./static/css/main.fa63c975.css.map",
-    "main.83a914ad.js.map": "./static/js/main.83a914ad.js.map"
+    "main.90e6c719.js.map": "./static/js/main.90e6c719.js.map"
   },
   "entrypoints": [
     "static/css/main.fa63c975.css",
-    "static/js/main.83a914ad.js"
+    "static/js/main.90e6c719.js"
   ]
 }
