@@ -219,6 +219,8 @@ img {
     color: #868686;
   }
   
+
+
   
   
   .App-link {
@@ -357,3 +359,21 @@ img {
   }
 
 }
+/* 
+#aboutsurprise .supriseabout{
+  display: hidden;
+  color: orange
+}
+
+#aboutsurprise .normalbout{
+  display: inline
+}
+
+
+#aboutsurprise:hover .surpriseabout{
+  display: inline
+}
+
+#aboutsurprise:hover .normalabout{
+  display: none
+} */
