@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
-import hello_man from "./assets/hello_man.gif"
+import getup_man from "./assets/getup_man_long.gif"
+import wave_man from "./assets/wave_man.gif"
 
 import NavBar from './components/NavBar';
 
@@ -27,11 +28,11 @@ const About = () => {
                 {!surpriseToggle && (
                  <span className="normalabout">
                  <h2 onClick={toggle} >Hello! It's me!</h2>
+                 
                    <div id="cols">
-                     {/* <img style={{width:"20%"}} src={hello_man}></img> */}
+                    <img style={{width: "25%"}} src={wave_man} ></img>
                            
                              <p>
-                        
                              Drawing from my background in visual arts, I bring a playful and absurdist tone to my programming work. I want to create self-aware products that can make accessibility beautiful and simple. In my work, I hope to balance the idealism of universal design with tangible practicality.
 
                              <br></br>
