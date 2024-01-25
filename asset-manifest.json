@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "./static/css/main.fa63c975.css",
-    "main.js": "./static/js/main.749093a1.js",
-    "static/media/nugo mockup dark.png": "./static/media/nugo mockup dark.ac83d621de175ee12186.png",
+    "main.js": "./static/js/main.c5489c4f.js",
     "static/media/iterativeflow.gif": "./static/media/iterativeflow.aa60665c970f04aae90a.gif",
     "static/media/getup_man_long.gif": "./static/media/getup_man_long.c8cdca070fa3559eb0f8.gif",
     "static/media/Storyboard.jpg": "./static/media/Storyboard.404ea5dd773216250cd5.jpg",
+    "static/media/nugo mockup dark.png": "./static/media/nugo mockup dark.10e4d8965e89f4ec3853.png",
     "static/media/Carton.jpeg": "./static/media/Carton.1810d9a6f427442b0f7c.jpeg",
     "static/media/renewable hydrogen txt.png": "./static/media/renewable hydrogen txt.749a70285fe2c3827be9.png",
     "static/media/Cleanmaterials.png": "./static/media/Cleanmaterials.fa516d2767b4938f6d58.png",
@@ -40,10 +40,10 @@
     "static/media/Profile.png": "./static/media/Profile.29377c0cc62304711f32.png",
     "index.html": "./index.html",
     "main.fa63c975.css.map": "./static/css/main.fa63c975.css.map",
-    "main.749093a1.js.map": "./static/js/main.749093a1.js.map"
+    "main.c5489c4f.js.map": "./static/js/main.c5489c4f.js.map"
   },
   "entrypoints": [
     "static/css/main.fa63c975.css",
-    "static/js/main.749093a1.js"
+    "static/js/main.c5489c4f.js"
   ]
 }
