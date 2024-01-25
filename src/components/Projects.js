@@ -7,10 +7,15 @@ import Mat from "./projecticons/Cleanmaterials.png"
 import Egg from './projecticons/Egg.png'
 import Mars from './projecticons/Marscreenshot.png'
 import Carton from './projecticons/Carton.jpeg'
+import NuGo from './projecticons/nugo mockup dark.png'
 
 const Projects = [
 
-    
+    {"name": "NuGo",
+    "link": "NuGo",
+    "image": NuGo,
+    "desc": "Packaging Redesign and Product Identify" ,
+    },
 
     {"name": "The Egg Problem",
     "link": "EggProblem",
