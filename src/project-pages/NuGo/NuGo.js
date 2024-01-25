@@ -24,11 +24,14 @@ const NuGo = ()  => {
                 The original packaging presented several challenges:
 
                     <ol>
-                        <li><emph> Weird Off-Center Boxes:</emph> The layout featured off-center boxes, causing visual dissonance and affecting the overall aesthetic. </li>
+                        <li><emph> Weird Logo:</emph> I found that the rotation of the box and font of the original logo disrupted the visual harmony. This issue led to a lack of cohesiveness and a less professional aesthetic. </li>
 
-                        <li><emph> Repeated Information: </emph> Redundant information cluttered the design, leading to confusion and a lack of clarity for the consumer.</li>
+                        <li><emph> Repeated Information: </emph>Repetition of information on the packaging caused confusion and clutter. Streamlining the content was crucial for a cleaner and more effective design.</li>
 
-                        <li><emph>Typographic Confusion:</emph> The font combo and style were a strange amalgamation of sports and chocolate/candy decadence, creating a mismatched and unclear visual identity.</li>
+                        <li><emph>Typographic Confusion:</emph> The typography lacked clear hierarchy, making it difficult for consumers to grasp essential information quickly. Clarity in communication was a key area for improvement.</li>
+
+                        <li><emph>Unclear Audience:</emph> The existing design had a confusing blend of sports nutrition and delicate chocolatey decadence, making it challenging to identify the target audience.</li>
+
                         
                     </ol>
                 </p>
