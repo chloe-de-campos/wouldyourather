@@ -31,11 +31,11 @@ const NuGo = ()  => {
                     <ol>
                         <li><b> Weird Logo:</b> I found that the rotation of the box and font of the original logo disrupted the visual harmony. This issue led to a lack of cohesiveness and a less professional aesthetic. </li>
 
-                        <li><b> Repeated Information: </b>Repetition of information on the packaging caused confusion and clutter. Streamlining the content was crucial for a cleaner and more effective design.</li>
+                        <li><b>Repeated Information: </b>Repetition of information on the packaging caused confusion and clutter. Streamlining the content was crucial for a cleaner and more effective design.</li>
 
                         <li><b>Typographic Confusion:</b> The typography lacked clear hierarchy, making it difficult for consumers to grasp essential information quickly. Clarity in communication was a key area for improvement.</li>
 
-                        <li><b>Unclear Audience:</b> I couldn't tell who the design was for. It had a confusing blend of sportsy, proteiny vibes, delicate chocolatey decadence, and </li>
+                        <li><b>Unclear Audience:</b> I couldn't tell who the design was for. It had a confusing blend of sportiness, delicate chocolatey decadence, and palm-oil-hating crunchiness.</li>
                     </ol>
                 </p>
 
