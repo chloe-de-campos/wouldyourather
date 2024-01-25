@@ -41,6 +41,7 @@ class App extends Component{
             <Route exact path="/nftscoring" element={NFTScoring}/>  
             <Route exact path="/selfcheckout" element={SelfCheckout}/>  
             <Route exact path="/sustainableinfrastructure" element={SustainableInfrastructure}/>  
+            <Route exact path="/NuGo" element={NuGo}/>  
             <Route element={About}/>  
           </Routes>
           {/* </div> */}

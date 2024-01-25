@@ -14,7 +14,7 @@ const Projects = [
     {"name": "NuGo",
     "link": "NuGo",
     "image": NuGo,
-    "desc": "Packaging Redesign and Product Identify" ,
+    "desc": "Packaging Redesign and Product Identity" ,
     },
 
     {"name": "The Egg Problem",

@@ -15,10 +15,12 @@ const NuGo = ()  => {
             <div class="projectDescription">
             <p className="date">January 2024</p>
                 <h2>Nugo</h2>
+
+                <p>I found these bars </p>
+
                 <h3>Challenge</h3>
 
                 <p>
-
                 The original packaging presented several challenges:
 
                     <ol>
@@ -33,9 +35,13 @@ const NuGo = ()  => {
 
                 <h3>Objectives</h3>
 
-                <p>Enhance Visual Appeal: Create a packaging design that catches the consumer's eye and communicates the energy bar's quality. 
-                Brand Consistency: Ensure the new design aligns with the overall brand image and values.
-                Informative Design: Incorporate key information about the product, benefits, and usage to guide the consumer.</p>
+                <p>
+                    <ol>
+                        <li><emph>Enhance Visual Appeal:</emph> Create a packaging design that catches the consumer's eye and communicates the energy bar's quality. </li>
+                        <li><emph> Brand Consistency: </emph>Ensure the new design aligns with the overall brand image and values.</li>
+                        <li><emph>Informative Design: </emph>Incorporate key information about the product, benefits, and usage to guide the consumer.</li>
+                    </ol>
+                </p>
 
                 <p>Impractical problems require impractical solutions. Mars is an app designed for students to communicate during class in the most obnoxious way possible to their peers. It uses javascript and React to translate messages from english to morsecode and then strobes the webpage to transmit it to those in view. It also includes a decoding interface for recipients to record and translate messages back to english.</p>
 
