@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.fa63c975.css",
-    "main.js": "./static/js/main.672c0cfd.js",
+    "main.css": "./static/css/main.6242e93b.css",
+    "main.js": "./static/js/main.6c7342d0.js",
     "static/media/iterativeflow.gif": "./static/media/iterativeflow.aa60665c970f04aae90a.gif",
+    "static/media/nugo mockup dark short.png": "./static/media/nugo mockup dark short.3ea4375a8a126cea22c6.png",
     "static/media/getup_man_long.gif": "./static/media/getup_man_long.c8cdca070fa3559eb0f8.gif",
     "static/media/Storyboard.jpg": "./static/media/Storyboard.404ea5dd773216250cd5.jpg",
     "static/media/nugo mockup dark.png": "./static/media/nugo mockup dark.10e4d8965e89f4ec3853.png",
     "static/media/Carton.jpeg": "./static/media/Carton.1810d9a6f427442b0f7c.jpeg",
+    "static/media/new_bar.png": "./static/media/new_bar.016252798d58786a347b.png",
     "static/media/renewable hydrogen txt.png": "./static/media/renewable hydrogen txt.749a70285fe2c3827be9.png",
+    "static/media/old_bar.png": "./static/media/old_bar.eb5c6f18f2d598cd4d66.png",
     "static/media/Cleanmaterials.png": "./static/media/Cleanmaterials.fa516d2767b4938f6d58.png",
     "static/media/annotated lowfi mobile.png": "./static/media/annotated lowfi mobile.80ca2dc7725cc5fd5a82.png",
     "static/media/annotated-hifi-laptop.png": "./static/media/annotated-hifi-laptop.cb60b5e7fe9051526a64.png",
@@ -39,11 +42,11 @@
     "static/media/NFT.png": "./static/media/NFT.ba80fdcf0e6f93cd1843.png",
     "static/media/Profile.png": "./static/media/Profile.29377c0cc62304711f32.png",
     "index.html": "./index.html",
-    "main.fa63c975.css.map": "./static/css/main.fa63c975.css.map",
-    "main.672c0cfd.js.map": "./static/js/main.672c0cfd.js.map"
+    "main.6242e93b.css.map": "./static/css/main.6242e93b.css.map",
+    "main.6c7342d0.js.map": "./static/js/main.6c7342d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa63c975.css",
-    "static/js/main.672c0cfd.js"
+    "static/css/main.6242e93b.css",
+    "static/js/main.6c7342d0.js"
   ]
 }
