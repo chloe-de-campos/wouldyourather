@@ -15,42 +15,44 @@ const Shindig = ()  => {
         <div>ls
             <div class="topBuffer"> </div>
             <div class="projectDescription">
-            <img src={require('./nugo mockup dark short.png')}></img>
+            {/* <img src={require('./nugo mockup dark short.png')}></img> */}
             <p className="date">January 2024</p>
                 <h2>Shindig</h2>
 
-                <p>I'm an athlete and a vegetarian and a college student. At the center of that venn diagram you find a person who is constantly scavenging for protein. I almost didn't buy a NuGo bar because the packaging was so offputting--and I'm vain about this stuff--but I liked the ingredients so I took a risk. The risk paid off, and I found myself not only satisfied but hooked, purchasing bars in every available flavor the following week. I started a redesign journey with the goal of creating packaging that would not only attract but excite me as a consumer.</p>
+                <p>Shindig is a command line tool and REST API for hosting and managing parties. It's a convenient way to organize events without the hassle of traditional invitations but with the hands-on personality of an invitation made from scratch.</p> 
 
+                
+                <h3>The Idea</h3>
 
-                <h3>Challenges</h3>
-
-                <img src={require('./old_bar.png')}></img>
+                
                 <p>
-                The original packaging presented several challenges:
+                I wanted the logo to have the feel of a hand printed card. I drew from the style of a block print to draft two options for the first version of the logo. I proposed a party hat or a banner to show a festive theme. 
+                </p> 
 
-                    <ol>
-                        <li><b> Weird Logo:</b> I found that the rotation of the box and font of the original logo disrupted the visual harmony. This issue led to a lack of cohesiveness and a less professional aesthetic. </li>
+                <img style={{width:"100%"}} src={require('./shindig12.png')}></img>
+                {/* <img style={{width : "45%"}} src={require('./shindig2.png')}></img> */}
 
-                        <li><b>Repeated Information: </b>Repetition of information on the packaging caused confusion and clutter. Streamlining the content was crucial for a cleaner and more effective design.</li>
+                <p>
+                The client liked the "do-it-yourself" theme and requested that the logos be simpler so they could be scaled down. 
+                </p> 
 
-                        <li><b>Typographic Confusion:</b> The typography lacked clear hierarchy, making it difficult for consumers to grasp essential information quickly. Clarity in communication was a key area for improvement.</li>
+                <img style={{width:"100%"}} src={require('./shindig3.png')}></img>
 
-                        <li><b>Unclear Audience:</b> I couldn't tell who the design was for. It had a confusing blend of sportiness, delicate chocolatey decadence, and palm-oil-hating crunchiness.</li>
-                    </ol>
+                <p>
+                I wanted to make one more version that was a little less busy so the party hat could stand out more clearly. We agreed on a bright green color and I added some eroded texture to the .svg file, to bring back the hand-made aesthetic. 
+                </p> 
+
+                <img style={{width:"100%"}} src={require('./shindig4.png')}></img>
+
+                <p>
+                Finally, I exported the star from the top of the hat as its own asset, to be used in smaller-scale areas.
                 </p>
 
-                <h3>Redesign Solutions</h3>
-                <img src={require('./new_bar.png')}></img>
-                <p>
-                    <ol>
-                        <li><b>Connect To Target Market:</b> Adopted an earthy, natural style to resonate with the target market, including vegans and those with specific dietary concerns, creating a visually cohesive and appealing packaging.</li>       
-                        <li><b>Enhance Visual Appeal:</b> Created a packaging design that catches the consumer's eye and communicates the energy bar's quality. Incorporated organic illustrations showcasing ingredients and flavors, fostering a connection with health-conscious consumers seeking natural products.</li>
-                        <li><b>Real Dark Chocolate Focus: </b>Emphasized the phrase "Real Dark Chocolate" by using a decadent dripping blobby shape and a dark chocolatey color. This approach maintains prominence without overwhelming the packaging with large text.</li>
-                    </ol>
+                <img style={{width:"100%"}} src={require('./shindig5.png')}></img>
+                        
+                <p> 
+                Shindig is now live! Check out <a target = "_blank" href="https://shindig.lol/"> their website here</a>.
                 </p>
-   
-                <button className="button" onClick={() => navigate(-1)} type="button">
-                Return to Projects</button>
             </div> 
         </div>
        
