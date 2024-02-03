@@ -7,6 +7,7 @@ import BuildAZoo from './project-pages/BuildAZoo/BuildAZoo.js'
 import EggProblem from './project-pages/EggProblem/EggProblem.js'
 import Mars from './project-pages/Mars/Mars.js'
 import NuGo from './project-pages/NuGo/NuGo.js'
+import Shindig from './project-pages/Shindig/Shindig.js'
 import BelgianEmbassy from './project-pages/BelgianEmbassy/BelgianEmbassy.js'
 import NFTScoring from './project-pages/NFTScoring/NFTScoring.js'
 import SelfCheckout from './project-pages/SelfCheckout/SelfCheckout.js'
@@ -43,6 +44,7 @@ class App extends Component{
             <Route exact path="/selfcheckout" element={SelfCheckout}/>  
             <Route exact path="/sustainableinfrastructure" element={SustainableInfrastructure}/>  
             <Route exact path="/NuGo" element={NuGo}/>  
+            <Route exact path="/shindig" element={Shindig}/>  
             <Route element={About}/>  
           </Routes>
           {/* </div> */}

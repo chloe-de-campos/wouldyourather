@@ -8,21 +8,23 @@ import Egg from './projecticons/Egg.png'
 import Mars from './projecticons/Marscreenshot.png'
 import Carton from './projecticons/Carton.jpeg'
 import NuGo from './projecticons/nugo mockup dark.png'
+import Shindig from './projecticons/Shindig.png'
 
 const Projects = [
 
     {"name": "NuGo",
     "link": "NuGo",
     "image": NuGo,
-    "desc": "Packaging Redesign and Product Identity" ,
+    "desc": "Packaging redesign and product identity development" ,
     },
 
-    {"name": "The Egg Problem",
-    "link": "EggProblem",
-    "image": Carton,
-    "desc": "Interactive web design to visualize a math problem" ,
+    {"name": "Shindig",
+    "link": "Shindig",
+    "image": Shindig,
+    "desc": "Logo design for an emerging tech startup" ,
     },
 
+   
     {"name": "Buildazoo",
     "link": "BuildAZoo",
     "image": Dev,
@@ -33,6 +35,12 @@ const Projects = [
     "link": "Mars",
     "image": Mars,
     "desc": "An impractical communication system for students" ,
+    },
+
+    {"name": "The Egg Problem",
+    "link": "EggProblem",
+    "image": Carton,
+    "desc": "Interactive web design to visualize a math problem" ,
     },
     
     {"name": "Sustainable Infrastructure",
@@ -54,11 +62,6 @@ const Projects = [
     "desc": "Using an iterative design process to incorporate user feedback into the design for a mobile app" ,
     },
 
-    {"name": "Self Checkout",
-    "link": "SelfCheckout",
-    "image": Pers,
-    "desc": "Researching the user experience at a local grocery store" ,
-    },
 
 
     
