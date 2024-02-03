@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.6242e93b.css",
-    "main.js": "./static/js/main.ae44f93e.js",
+    "main.js": "./static/js/main.d38bb74a.js",
     "static/media/iterativeflow.gif": "./static/media/iterativeflow.aa60665c970f04aae90a.gif",
     "static/media/nugo mockup dark short.png": "./static/media/nugo mockup dark short.3ea4375a8a126cea22c6.png",
     "static/media/getup_man_long.gif": "./static/media/getup_man_long.c8cdca070fa3559eb0f8.gif",
@@ -9,6 +9,7 @@
     "static/media/nugo mockup dark.png": "./static/media/nugo mockup dark.10e4d8965e89f4ec3853.png",
     "static/media/Carton.jpeg": "./static/media/Carton.1810d9a6f427442b0f7c.jpeg",
     "static/media/new_bar.png": "./static/media/new_bar.016252798d58786a347b.png",
+    "static/media/Shindig.png": "./static/media/Shindig.a587407d7206c0360eb9.png",
     "static/media/renewable hydrogen txt.png": "./static/media/renewable hydrogen txt.749a70285fe2c3827be9.png",
     "static/media/old_bar.png": "./static/media/old_bar.eb5c6f18f2d598cd4d66.png",
     "static/media/Cleanmaterials.png": "./static/media/Cleanmaterials.fa516d2767b4938f6d58.png",
@@ -33,8 +34,12 @@
     "static/media/Olympia.png": "./static/media/Olympia.a02b435c832302b29535.png",
     "static/media/Egg.png": "./static/media/Egg.4241f5a985dfa6871ba2.png",
     "static/media/phonereredesign.png": "./static/media/phonereredesign.3eaaf0298cd803a6397d.png",
+    "static/media/shindig12.png": "./static/media/shindig12.ae5ffad28f1675c74772.png",
     "static/media/sketch4.jpg": "./static/media/sketch4.da4df700c897c10d084c.jpg",
+    "static/media/shindig3.png": "./static/media/shindig3.4d1ae151911850477dfa.png",
+    "static/media/shindig4.png": "./static/media/shindig4.66584d78fecc3b1ea1a2.png",
     "static/media/wave_man.gif": "./static/media/wave_man.ea2e7bcc81f6c5e38cd0.gif",
+    "static/media/shindig5.png": "./static/media/shindig5.9ca7520dff11c5a826e0.png",
     "static/media/Learning.png": "./static/media/Learning.d8d020ab16056bfdb64d.png",
     "static/media/Discover.png": "./static/media/Discover.672e0c5dc842e5eb097d.png",
     "static/media/Home.png": "./static/media/Home.02b15bc4f9b8cad4d96c.png",
@@ -43,10 +48,10 @@
     "static/media/Profile.png": "./static/media/Profile.29377c0cc62304711f32.png",
     "index.html": "./index.html",
     "main.6242e93b.css.map": "./static/css/main.6242e93b.css.map",
-    "main.ae44f93e.js.map": "./static/js/main.ae44f93e.js.map"
+    "main.d38bb74a.js.map": "./static/js/main.d38bb74a.js.map"
   },
   "entrypoints": [
     "static/css/main.6242e93b.css",
-    "static/js/main.ae44f93e.js"
+    "static/js/main.d38bb74a.js"
   ]
 }
