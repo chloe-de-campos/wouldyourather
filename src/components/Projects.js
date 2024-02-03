@@ -21,7 +21,7 @@ const Projects = [
     {"name": "Shindig",
     "link": "Shindig",
     "image": Shindig,
-    "desc": "Logo design for an emerging tech startup" ,
+    "desc": "Logo design for a new software tool" ,
     },
 
    
