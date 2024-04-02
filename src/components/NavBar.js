@@ -47,7 +47,9 @@ const NavBar= () => {
   if(window.matchMedia("(min-width: 600px)").matches){
     return (
       <div style={{padding:padding}} className="NavBar">
-         <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(3.75vw)"}} href="https://sdpy695.github.io/#/UI-Portfolio-4/">Chloe de Campos</h1></NavLink>
+         <NavLink style={{ textDecoration: 'none', color: "black"}} to="/">
+          <h1 className="bouncing-text"  style={{"fontSize":"calc(3.75vw)"}} href="https://chloedecampos.com">Chloe de Campos</h1>
+          </NavLink>
         <div className="NavButtons">
       
         <Button title="link me in" style={{"margin": "0px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">

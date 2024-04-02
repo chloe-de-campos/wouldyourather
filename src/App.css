@@ -377,3 +377,22 @@ img {
 #aboutsurprise:hover .normalabout{
   display: none
 } */
+
+.bouncing-text {
+  font-size: calc(3.75vw);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bouncing-text:hover {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
