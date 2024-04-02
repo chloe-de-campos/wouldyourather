@@ -48,7 +48,21 @@ const NavBar= () => {
     return (
       <div style={{padding:padding}} className="NavBar">
          <NavLink style={{ textDecoration: 'none', color: "black"}} to="/">
-          <h1 className="bouncing-text"  style={{"fontSize":"calc(3.75vw)"}} href="https://chloedecampos.com">Chloe de Campos</h1>
+         {/* <div class="smokey-title" > */}
+          <h1 a={"https://chloedecampos.com"}>Chloe de Campos</h1>
+          {/* </div> */}
+
+         {/* <h1 className="bouncing-text" style={{"fontSize":"calc(3.75vw)"}} href="https://chloedecampos.com">
+              {Array.from('Chloe de Campos').map((letter, index) => {
+              const content = letter === ' ' ? '\u00A0' : letter;
+              return (
+                <span key={index} style={{ animationDelay: `${index * 0.03}s` }}>
+                  {content}
+                </span>
+              );
+            })}
+          </h1> */}
+          {/* <h 1 className="bouncing-text"  style={{"fontSize":"calc(3.75vw)"}} href="https://chloedecampos.com">Chloe de Campos</h1> */}
           </NavLink>
         <div className="NavButtons">
       
