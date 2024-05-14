@@ -12,7 +12,7 @@ const SustainableInfrastructure = ()  => {
 
     return(
         <div>
-            <div className="topBuffer"> </div>
+    
             <div className="projectDescription">
             <p className="date">July 2021</p>
                 <h2>The Center for Sustainable Infrastructure</h2>
@@ -64,8 +64,8 @@ const SustainableInfrastructure = ()  => {
 
                 <p>Check out the <a href="https://www.sustaininfrastructure.org/impact">2021 Impact Report</a> to see my published work. </p>
 
-                <button className="button" onClick={() => navigate(-1)} type="button">
-                Return to Projects</button>
+                {/* <button className="button" onClick={() => navigate(-1)} type="button">
+                Return to Projects</button> */}
             </div> 
         </div>
        

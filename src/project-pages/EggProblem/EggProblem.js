@@ -13,7 +13,6 @@ const EggProblem = ()  => {
 
     return(
         <div>
-            <div class="topBuffer"> </div>
             <div class="projectDescription">
             
                 <div>
@@ -31,8 +30,8 @@ const EggProblem = ()  => {
                 <a href="https://chloe-de-campos.github.io/the-egg-problem/" target="_blank">Solve the egg problem yourself 😇</a>.
 
                 </div>
-                <button className="button" onClick={() => navigate(-1)} type="button">
-            Return to Projects</button>
+                {/* <button className="button" onClick={() => navigate(-1)} type="button">
+            Return to Projects</button> */}
             </div> 
             
         </div>

@@ -20,8 +20,8 @@ const About = () => {
   
     return (
       <div>
-        <div className="topBuffer"> </div>
-          <div id="aboutsurprise" className="projectDescription">
+        {/* <div className="topBuffer"> </div> */}
+          <div style={{"padding-top":"5%"}} id="aboutsurprise" className="projectDescription">
             
              <span className="normalabout"></span>
               <div className="box">
@@ -37,7 +37,7 @@ const About = () => {
 
                              <br></br>
                              <br></br>
-                             Coding is frustrating and satisfying because I learn so much from each project. I look forward to working with teams of inspired and inspiring folks. 
+                             Design is frustrating and satisfying and exhausting. I look forward to working with teams of inspired and inspiring folks. 
                              <br></br>
                          
                              <br></br>

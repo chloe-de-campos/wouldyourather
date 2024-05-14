@@ -12,8 +12,7 @@ const Shindig = ()  => {
     }
 
     return(
-        <div>ls
-            <div class="topBuffer"> </div>
+        <div>
             <div class="projectDescription">
             {/* <img src={require('./nugo mockup dark short.png')}></img> */}
             <p className="date">January 2024</p>

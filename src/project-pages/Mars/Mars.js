@@ -11,7 +11,7 @@ const Mars = ()  => {
 
     return(
         <div>
-            <div class="topBuffer"> </div>
+        
             <div class="projectDescription">
             <p className="date">February 2023</p>
                 <h2>Mars</h2>
@@ -21,8 +21,8 @@ const Mars = ()  => {
             
                 <p><a target="_blank" href="https://chloe-de-campos.github.io/mars/">Send a message to mars</a>.</p> 
 
-                <button className="button" onClick={() => navigate(-1)} type="button">
-                Return to Projects</button>
+                {/* <button className="button" onClick={() => navigate(-1)} type="button">
+                Return to Projects</button> */}
             </div> 
         </div>
        

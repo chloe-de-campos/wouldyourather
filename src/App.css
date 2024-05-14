@@ -8,7 +8,7 @@ element {
   padding-top: 10px;
   margin-bottom: -15px;
   font-weight: 400;
-  font-size:8pt;
+  font-size:10pt;
 }
 
 img {
@@ -44,12 +44,11 @@ img {
 .project-image:active{
   transform: scale(1.5);
   transition: .1s;
-
 }
 
 @media screen and (min-device-width:640px) {
   .topBuffer{
-    padding: 80px;
+    padding: 10px;
   }
   .Project{
     width: 30%;
@@ -69,7 +68,8 @@ img {
     padding-left: 10%;
     padding-right:10%;
     padding-bottom: 5%;
-    padding-top: 5%;
+    padding-top: 2%;
+    background-color: #f1f1f1 80%;
   }
   
   .bio{
@@ -77,14 +77,16 @@ img {
   }
   
   body {
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
     font-weight: 300;
     color:#282c34;
+    scroll-snap-type:mandatory;
+   
    }
    
    h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: 900; */
     /* font-size: inherit; */
     color:#282c34;
    }
@@ -135,6 +137,7 @@ img {
   
   .mainApp {
     align-items: center;
+   
   }
   
   
@@ -162,8 +165,6 @@ img {
     padding-top: 6%;
     padding-bottom: 6%; */
     align-items: center;
-    background-color: #c6ff54;
-    background-color: #FFFFFF;
     padding: '10px 100px 10px 100px'; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
@@ -173,10 +174,29 @@ img {
     height: var(--nav-height)
   }
   
+
+  .NavBar2 {
+    /* background-color: aqua; */
+    /* height: 10px; */
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: right;
+    padding: '10px 10px 10px 10px'; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: sticky;
+    top: 0; /* At the top */
+    z-index: 99;
+    box-sizing: border-box;
+    height: var(--nav-height)
+  }
+
   .NavButtons{
     display: flex;
     align-items:center;
     margin:10px;
+    
   }
   
   .App-header {
@@ -193,12 +213,12 @@ img {
   
   /* CSS */
   .button {
-    background-color: white;
     border: 1px solid #3c4043;
     /* border-radius: 4px; */
     color: #282c34;
     cursor: pointer;
-    font-family: arial,sans-serif;
+    
+    /* font-family: 'DM Sans', sans-serif; */
     font-size: 14px;
     height: 36px;
     line-height: 27px;
@@ -218,8 +238,6 @@ img {
     box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
     color: #868686;
   }
-  
-
 
   
   
@@ -232,27 +250,63 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-self: center;
-    justify-content: space-evenly;
     margin-bottom: 200px;
   }
   
   .Project{
-    padding:30px;
-    margin:15px;
-    width: 30%;
+
+    width: 100%;
     /* height:  */
     /* border-radius: 1vmin; */
-    border-color:#cbcbcb;
-    border-width: 2px;
-    border-style: solid;
-    justify-content: space-between;
     /* background-color:  */
     text-align: left;
     display: flex;
     flex-direction: column;
     box-shadow: #282c34;
+    position: relative; /* Needed for absolute positioning of the content */
+    color:black;
+    display: flex;
+    margin: 4vh 0 5vh 0;
+    overflow: hidden; /* Ensures no overflow from child elements */
+    /* border-bottom: 1px solid black; */
+    padding: 5vh 5vh 5vh 5vh;
+    /* max-height: 50vh; */
   }
+
+
+  .Project:hover {
+    box-shadow: rgb(214, 214, 219) .1px 2px 8px 8px;
+    
+  }
+
+.ProjectContent {
+    position: sticky; /* Positions relative to Project div */
+    z-index: 1; /* Above the image */
+    color: black; /* Ensures the text is visible on potentially dark images */
+    text-align: left; /* Centers the text within the content div */
+    width: 100%; /* Ensures it takes the full width of the parent */
+    padding: 0vh 10vh 0vh 10vh; /* Padding around the text for readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
   
   .p{
     overflow-wrap: normal;
@@ -289,7 +343,7 @@ img {
   
   
 
-  html { position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: auto; }
+  html { position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: auto;;}
   body { width: 100%; height: auto; }
   
  
@@ -298,24 +352,27 @@ img {
 
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+      sans-serif; */
+
+    font-family: 'DM Sans', sans-serif;
+  
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+   
+    /* font-family: 'DM Sans', sans-serif; */
   }
   
 
 
   
   .projectDescription{
-    margin: 2vh 20vw; 
-    padding-bottom: 20vh;
+    margin: 1vh 1vw; 
   }
 
 
@@ -344,14 +401,18 @@ img {
 
   h1, h2, h3, h4, h5, h6 {
     /* font-size: max(inherit,10pt); */
+
+    /* font-family: 'DM Sans', sans-serif; */
     color:#282c34;
    }
   body, p{
+
+    /* font-family: 'DM Sans', sans-serif; */
     font-size: min(initial,10pt);
   }
 
   .topBuffer{
-      padding: 45px;
+      padding: 20px;
   }
 
   .button{
@@ -377,30 +438,39 @@ img {
 #aboutsurprise:hover .normalabout{
   display: none
 } */
+
+
+
 .bouncing-text {
-  font-size: calc(3.75vw);
-  cursor: pointer;
+  font-family: 'baskerville';
+  font-size: calc(9vw);
   display: inline-block;
 }
 
 .bouncing-text span {
-  display: inline-block;
+
   transition: transform 0.9s ease-in;
 }
 
-.bouncing-text:hover span {
-  animation: bounce 0.1s 1 alternate ease-out;
+.bouncing-text span:hover {
+  animation: bounce .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+/* .bouncing-text span:active {
+  color: white;
+  -webkit-text-stroke: .5pt black;
+} */
 @keyframes bounce {
   0% {
     transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px); /* Changed 100% to 50% for a smoother bounce */
+  }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(0);
   }
 }
-
 
 .text-pop-up-br {
 	-webkit-animation: text-pop-up-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -442,12 +512,10 @@ img {
 
 
 @import url('https://fonts.googleapis.com/css?family=Cairo');
-/* body {
-  background-color: #010;
-}
+
 
 .title {
-  font-family: "Cairo";
+  /* font-family: "Cairo"; */
   text-align: center;
   color: #FFF;
   display: flex;
@@ -459,20 +527,29 @@ img {
   line-height:2
 }
 
-.smokey-title { */
-  /* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif); */
-  /* background-image: url( https://i.pinimg.com/originals/40/02/c3/4002c31f64300a28c896b1b4683e85d7.gif);
-
-  background-size: cover;
-  color: transparent;
+.smokey-title {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: 50vw;
+  background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  text-transform: uppercase;
-  font-size: 120px;
+  -webkit-text-fill-color: transparent;
   margin: 10px 0;
-} */
-/* styling my button */
+  /* Fallback color if background-clip is not supported */
+}
+
+.smokey-letter:hover {
+  /* color:#61dafb;
+  -webkit-text-fill-color: #61dafb; */
+  animation: bounce 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 /* 
+.smokey-title span:hover {
+  animation: bounce 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+/* styling my button */
+
 .white-mode {
   text-decoration: none;
   padding: 7px 10px;
@@ -483,10 +560,101 @@ img {
   position: absolute;
   left: 15px;
   bottom: 15px;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
 }
 
 .white-mode:hover {
-  background-color: #FFF;
+  background-color: #e3dddd;
   color: #122;
+}
+
+
+/* #myPath {
+  transition: d 0.3s ease-in-out;
+}
+
+#myPath:hover {
+  d: path("M10 10 L90 10 L90 90 L50 90 L10 90 Z"); New path data 
+#man1:hover{
+<svg width="184" height="184" viewBox="0 0 184 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M144.394 85.9177C148.404 88.0277 151.914 88.9077 155.704 87.5477C159.494 86.1877 162.414 81.9877 163.634 78.2677C165.314 73.1477 163.764 67.1877 159.654 63.6877C155.544 60.1877 149.054 59.4477 144.194 62.0977C139.334 64.7477 136.104 68.1977 135.524 73.5177C135.134 77.1377 138.514 83.5677 144.394 85.9177Z" fill="white"/>
+<path d="M138.494 66.5154C141.514 61.0554 144.25 46.91 160.77 4.46999C161.82 1.75999 158.26 -0.390011 156.23 1.73999C156.09 1.87999 156.51 1.47999 156.5 1.49999C112.5 104.5 122 76.0788 33.5 118C22.5 123.21 3.76993 142.41 2.52993 143.31C0.0299255 145.12 2.06993 149 4.99993 148C7.63993 147.11 27.3845 131.737 33.5 128.5C42 124 46 122 55.5 118C63.1825 114.765 72.89 111.04 87 114C92.1 115.07 97.8837 116.974 102.294 119.674C108.894 123.714 112.864 128.734 114.934 136.024C117.664 145.624 116.644 158.344 107.664 163.174C98.6737 168.004 87.3086 170.12 78.4986 165C73.2634 161.957 67.3386 155.44 64.6686 149.47C61.9986 143.5 58.3986 140.16 56.4986 142C52.3386 146.04 56.4986 152.269 59.9986 159C66.4986 171.5 75.4637 177.67 87.9737 181C134.194 193.29 139.804 138.794 160.624 109.214C168.634 97.8442 180.5 90 182.5 64C182.923 58.5 181.56 26.52 183 21.5C183.76 18.86 178.13 17.5 178 21C177 48 175.494 81.5042 155.704 87.5477C151.914 88.9077 148.404 88.0277 144.394 85.9177C138.514 83.5677 135.134 77.1377 135.524 73.5177C135.829 70.7176 136.869 68.4355 138.494 66.5154Z" fill="white"/>
+<path d="M155.704 87.5477C175.494 81.5042 177 48 178 21C178.13 17.5 183.76 18.86 183 21.5C181.56 26.52 182.923 58.5 182.5 64C180.5 90 168.634 97.8442 160.624 109.214C139.804 138.794 134.194 193.29 87.9737 181C75.4637 177.67 66.4986 171.5 59.9986 159C56.4986 152.269 52.3386 146.04 56.4986 142C58.3986 140.16 61.9986 143.5 64.6686 149.47C67.3386 155.44 73.2634 161.957 78.4986 165C87.3086 170.12 98.6737 168.004 107.664 163.174C116.644 158.344 117.664 145.624 114.934 136.024C112.864 128.734 108.894 123.714 102.294 119.674C97.8837 116.974 92.1 115.07 87 114C72.89 111.04 63.1825 114.765 55.5 118C46 122 42 124 33.5 128.5C27.3845 131.737 7.63993 147.11 4.99993 148C2.06993 149 0.0299255 145.12 2.52993 143.31C3.76993 142.41 22.5 123.21 33.5 118C122 76.0788 112.5 104.5 156.5 1.49999C156.51 1.47999 156.09 1.87999 156.23 1.73999C158.26 -0.390011 161.82 1.75999 160.77 4.46999C144.25 46.91 141.514 61.0554 138.494 66.5154C136.869 68.4355 135.829 70.7176 135.524 73.5177M155.704 87.5477C151.914 88.9077 148.404 88.0277 144.394 85.9177C138.514 83.5677 135.134 77.1377 135.524 73.5177M155.704 87.5477C159.494 86.1877 162.414 81.9877 163.634 78.2677C165.314 73.1477 163.764 67.1877 159.654 63.6877C155.544 60.1877 149.054 59.4477 144.194 62.0977C139.334 64.7477 136.104 68.1977 135.524 73.5177" stroke="black" stroke-miterlimit="10"/> 
+  d: path("M144.394 85.9177C148.404 88.0277 151.914 88.9077 155.704 87.5477C159.494 86.1877 162.414 81.9877 163.634 78.2677C165.314 73.1477 163.764 67.1877 159.654 63.6877C155.544 60.1877 149.054 59.4477 144.194 62.0977C139.334 64.7477 136.104 68.1977 135.524 73.5177C135.134 77.1377 138.514 83.5677 144.394 85.9177Z" fill="white")
+
 } */
+#man1 {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 50% -90%;
+
+}
+
+.animate {
+  animation: wiggle 0.3s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
+
+#man1:hover {
+  animation: wiggle 0.3s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
+
+#man2 {
+  transition: transform 1s cubic-bezier(.28,.56,.75,.98);
+  /* transform-origin: 120% 50%; */
+  transform-origin: 1% -10%;
+
+}
+.animate {
+  animation: wiggle 0.3s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
+#man2:hover {
+  animation: wiggle 0.3s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
+
+#man3 {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 50% -50%;
+
+}
+.animate {
+  animation: wiggle 0.2s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
+
+#man3:hover {
+  animation: wiggle 0.2s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
+/* #man3:active {
+ fill:black;
+ stroke: white;
+ stroke-width: 1pt;
+ 
+}
+#man2:active {
+  fill:black;
+  stroke: white;
+  stroke-width: 1pt;
+  
+ }
+ #man1:active {
+  fill:black;
+  stroke: white;
+  stroke-width: 1pt;
+  
+ } */
+
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(7deg) translateY(-2pt);
+  }
+}
+
+
+body{
+
+  max-height: 96vh;
+  /* "max-height": "100vh",
+                  "overflow": "hidden" */
+}

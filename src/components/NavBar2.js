@@ -20,17 +20,17 @@ import { GitHub } from '@mui/icons-material';
 
 // top navigation bar. collapses on scroll, or on smaller screensize 
 
-const NavBar= () => {
+const NavBar2= () => {
 
-  const [padding, setPadding] = useState('40px 14% 10px 14%');
+  const [padding, setPadding] = useState('5px 4% 2px 4%');
 
   window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 80) {
-        setPadding('0px 7%')
+        setPadding('5px 4% 2px 14%')
 
       } else {
-        setPadding('40px 14% 10px 14%')
+        setPadding('5px 4% 2px 14%')
       }
     }
    
@@ -38,58 +38,74 @@ const NavBar= () => {
     console.log('handling change like a champ')
   };
 
+  const scrolltowork = (event) => {
+    if  (document.getElementById('workGallery')){
+      document.getElementById('workGallery').scrollIntoView({behavior:"smooth", block:"start"})}
+  }
+
+  const scrolltoabout = (event) => {
+    if (document.getElementById("aboutme")){
+      document.getElementById("aboutme").scrollIntoView({behavior:"smooth", block:"start"})}
+  }
+
   let navigate = useNavigate(); 
   const openAbout = () =>{ 
     let path = `about`; 
     navigate(path);
   }
 
+  const openHome = () =>{ 
+    let path = ``; 
+    navigate(path);
+  }
+  const openWork = () =>{ 
+    let path = `work`; 
+    navigate(path);
+  }
+
+  const scrolltoTop = () => {
+    window.scrollTo({top: 0, left: 0, behavior:"smooth"});
+  }
+
+
   if(window.matchMedia("(min-width: 600px)").matches){
     return (
       
-      <div style={{padding:padding}} className="NavBar">
+      <div style={{padding:padding}} className="NavBar2">
         
-         <NavLink  style={{ textDecoration: 'none',}}  to="/">
-         
-                <h1  style={{"fontSize":"calc(6vw)"}} a="https://chloedecampos.com">
-                  <div class="bouncing-text"> 
-                      {/* <div class="smokey-title" > */}
-                      {Array.from('CHLOE DE CAMPOS').map((letter, index) => {
-                        const content = letter === ' ' ? '\u00A0' : letter;
-                        return (
-                          // style={{ animationDelay: `${index * 0.03}s` }}
-                          <span class="smokey-letter" key={index} >
-                            {content}
-                          </span>
-                        );
-                      })}
-                    {/* </div> */}
-                  </div>
-                </h1>
 
-            
-           
-          </NavLink>
      {/* <h1 className="bouncing-text"  style={{"fontSize":"calc(3.75vw)"}} href="https://chloedecampos.com">Chloe de Campos</h1> */}
           
-        <div className="NavButtons"> 
-              
-        <Button title="link me in" style={{"margin": "0px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
-          {/* Link me in */}
+        <div className="NavButtons" style={{}}> 
+          
+          <div className="button" title="home" style={{fontWeight: '400', fontSize: '12pt', "margin": "0px", border:"0px", boxShadow:"none"}} target="_blank" onClick={scrolltoTop}>
+            HOME
+          </div>
+
+          <div className="button" title="my work" style={{fontWeight: '400',fontSize: '12pt', "margin": "0px", border:"0px", boxShadow:"none"}} target="_blank"  onClick={scrolltowork}>
+            WORK
+          </div>
+
+          <div className="button" title="about" style={{fontWeight: '400',fontSize: '12pt', "margin": "0px", border:"0px", boxShadow:"none"}} target="_blank" onClick={scrolltoabout}>
+                ABOUT
+              </div>
+
+        {/* <Button title="link me in" style={{"margin": "0px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
+
           <LinkedInIcon style={{width:"20px", margin:"0px", padding:"0px"}} />
         </Button>
         <Button title="email me" style={{"margin": "0px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
-          {/* Email  */}
+
           <EmailIcon style={{width:"20px", margin:"0px", padding:"0px"}} />
         </Button>
         <Button title="about me" style={{"margin": "0px"}} onClick={openAbout}>
-          {/* About */}
+
           <PersonIcon style={{width:"20px", margin:"0px", padding:"0px"}} />
         </Button>
         <Button title="my github" style={{"margin": "0px"}} target="_blank" href="https://github.com/chloe-de-campos/">
-          {/* My Github*/}
+
           <GitHub style={{width:"20px", margin:"0px", padding:"0px"}} />
-        </Button>
+        </Button> */}
        
         </div>
        </div>        
@@ -97,27 +113,38 @@ const NavBar= () => {
   }
   else{
     return (
-      <div style={{justifyContent:'center', padding:'1%',}} id="NavBar" className="NavBar">
-          <NavLink style={{ textDecoration: 'none', color: "black"}} to="/"><h1 style={{"fontSize":"calc(4vw)", "padding":"10px"}} a="https://chloedecampos.com">Chloe de Campos</h1></NavLink>
+      <div style={{position: 'relative', justifyContent:'right', padding:'1%',}} id="NavBar" className="NavBar">
+          
                 <div className="NavButtons">
-            
+                <Button title="home" style={{"margin": "0px"}} target="_blank" onClick={openHome}>
+                HOME
+              </Button>
+
+              <Button title="my work" style={{"margin": "0px"}} target="_blank"  onClick={openWork}>
+                WORK
+              </Button>
+
+              <Button title="about" style={{"margin": "0px"}} target="_blank" onClick={openAbout}>
+                ABOUT
+              </Button>
+{/* 
                 <Button title="link me in" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
-                {/* Link me in */}
+  
                     <LinkedInIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
                 </Button>
                 <Button title="email me" style={{"margin": "-3px", padding: "1px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
-                {/* Email  */}
+
                     <EmailIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
                 </Button>
                 <Button title="about me" style={{"margin": "-3px", padding: "1px"}} onClick={openAbout}>
-                {/* About */}
+ 
                     <PersonIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
                 </Button>
             
                 <Button title="my github" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://github.com/chloe-de-campos/">
-                {/* My Github*/}
+
                     <GitHub style={{width:"20px", margin:"0px", padding:"0px"}} />
-                </Button>
+                </Button> */}
             
         </div>
        </div>        
@@ -128,4 +155,4 @@ const NavBar= () => {
   
 }
 
-export default <NavBar/>;
+export default <NavBar2/>;
