@@ -22,7 +22,7 @@ const NuGo = ()  => {
                 <p>I'm an athlete, a vegetarian, and a college student. At the center of that venn diagram you find a person who is constantly scavenging for protein. I almost didn't buy a NuGo bar because the packaging was so offputting--and I'm vain about this stuff--but I liked the ingredients so I took a risk. The risk paid off, and I found myself not only satisfied but hooked, purchasing bars in every available flavor the following week. I started a redesign journey with the goal of creating packaging that would not only attract but excite me as a consumer.</p>
 
 
-                <h3>Challenges</h3>
+                <h3 >Challenges</h3>
 
                 <img src={require('./old_bar.png')}></img>
                 <p>
@@ -38,8 +38,7 @@ const NuGo = ()  => {
                         <li><b>Unclear Audience:</b> I couldn't tell who the design was for. It had a confusing blend of sportiness, delicate chocolatey decadence, and palm-oil-hating crunchiness.</li>
                     </ol>
                 </p>
-
-                <h3>Redesign Solutions</h3>
+                <h3 style={{'margin-top': '10vh'}}>Redesign Solutions</h3>
                 <img src={require('./new_bar.png')}></img>
                 <p>
                     <ol>

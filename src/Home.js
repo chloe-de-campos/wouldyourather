@@ -247,14 +247,13 @@ const Home = () =>{
         {/* <div className="topBuffer"> </div> */}
           <div style={{"padding-top":"5%", alignItems:'left'}} id="aboutme" className="projectDescription">
 
-          <h5 style={{fontWeight: '500',fontFamily: 'baskerville', fontSize: 'calc(5vw)', padding:'0pt', margin:'0pt'}}>ABOUT</h5>
+        
              <span className="normalabout"></span>
               <div className="box">
-                 <span className="normalabout">
-                 
-                 
-                   <div id="cols">
-
+                 <span className="normalabout" style={{"display":"flex", justifyContent:'space-between', alignContent:'space-between'}}>
+                
+                   <div id="cols" >
+                   <h5 style={{fontWeight: '500',fontFamily: 'baskerville', fontSize: 'calc(5vw)', padding:'0pt', margin:'0pt'}}>ABOUT</h5>
                            
                              <p>
                              Drawing from my background in visual arts and computer science, I bring a playful functionality to my work as a designer. 
@@ -269,7 +268,7 @@ const Home = () =>{
                               I grew up in Seattle and took a pandemic-y journey through studying at Brown University and the Berlin Art Institute. Design is frustrating and satisfying and exhausting. I look forward to working with teams of inspired and inspiring folks. 
                              <br></br>
                              <br></br>
-                             Outside of school, I <a target = "_blank" href="https://m.youtube.com/watch?v=amLP0th0TN0&feature=youtu.be/">play ultimate frisbee</a>, solve crosswords, people-watch, and draw <a target = "_blank" href="https://www.instagram.com/stink.lines/">drawings for little stinkers</a>.
+                             Outside of design, I <a target = "_blank" href="https://m.youtube.com/watch?v=amLP0th0TN0&feature=youtu.be/">play ultimate frisbee</a>, solve crosswords, and draw <a target = "_blank" href="https://www.instagram.com/stink.lines/">drawings for little stinkers</a>.
 
                              <br></br>
                              <br></br>
@@ -277,6 +276,9 @@ const Home = () =>{
                              </p>
                
                      </div>
+                     <div id="cols" style={{width:'50%', display:'flex', alignItems:'flex-start'}}>
+                          <img id="myPath" src={"men/meman.png"}/>
+                    </div>
                </span>
                
                 
@@ -288,7 +290,7 @@ const Home = () =>{
                 
             </div>
 
-            <div id="footer" style={{width:'80vw', display:'flex', justifyContent:'center', padding:'30vh 10vw 1vh  10vw'}}> 
+            <div id="footer" style={{width:'80vw', display:'flex', justifyContent:'center', padding:'30vh 10vw 3vh 10vw', opacity:'50%'}}> 
                   Handcoded with &lt;3 in Providence, RI
             
             </div>

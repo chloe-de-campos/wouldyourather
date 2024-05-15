@@ -16,7 +16,7 @@ const Shindig = ()  => {
             <div class="projectDescription">
             {/* <img src={require('./nugo mockup dark short.png')}></img> */}
             <p className="date">January 2024</p>
-                <h2>Shindig</h2>
+                <h1 style={{fontFamily:'baskerville', fontWeight: '600'}}>Shindig</h1>
 
                 <p>Shindig is a command line tool and REST API for hosting and managing parties. It's a convenient way to organize events without the hassle of traditional invitations but with the hands-on personality of an invitation made from scratch.</p> 
 
