@@ -20,7 +20,7 @@ const SustainableInfrastructure = ()  => {
           
 	        
                 <p>
-                In the spring and summer of 2021, I intered at the Center for Sustainable Infrastructrue in Olympia, Washington. These are graphics I designed to illustrate the industrial systems and problem-solving approaches they were developing. 
+                In the spring and summer of 2021, I interned at the Center for Sustainable Infrastructrue in Olympia, Washington. These are graphics I designed to illustrate the industrial systems and problem-solving approaches they were developing. 
                 </p>
         
                 </div>

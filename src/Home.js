@@ -265,7 +265,7 @@ const Home = () =>{
                              
                              <br></br>
                              <br></br>
-                              I grew up in Seattle and took a pandemic-y journey through studying at Brown University and the Berlin Art Institute. Design is frustrating and satisfying and exhausting. I look forward to working with teams of inspired and inspiring folks. 
+                              I grew up in Seattle and took a pandemic-y journey through studying at Brown University and the Berlin Art Institute. Design is frustrating and exhausting but that's what makes it satisfying. I look forward to working with teams of inspired and inspiring folks. 
                              <br></br>
                              <br></br>
                              Outside of design, I <a target = "_blank" href="https://m.youtube.com/watch?v=amLP0th0TN0&feature=youtu.be/">play ultimate frisbee</a>, solve crosswords, and draw <a target = "_blank" href="https://www.instagram.com/stink.lines/">drawings for little stinkers</a>.
