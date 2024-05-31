@@ -46,15 +46,6 @@ img {
   transition: .1s;
 }
 
-@media screen and (min-device-width:640px) {
-  .topBuffer{
-    padding: 10px;
-  }
-  .Project{
-    width: 30%;
-  }
-}
-
 .h1{
     align-items: center;
     justify-content: center;
@@ -622,6 +613,21 @@ button:hover {
 #man3:hover {
   animation: wiggle 0.2s cubic-bezier(.28,.56,.75,.98) 2 alternate;
 }
+
+
+
+#myman {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 50% -50%;
+
+}
+.animate {
+  animation: wiggle 0.2s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
+
+#myman:hover {
+  animation: wiggle 0.2s cubic-bezier(.28,.56,.75,.98) 2 alternate;
+}
 /* #man3:active {
  fill:black;
  stroke: white;
@@ -657,4 +663,69 @@ body{
   max-height: 96vh;
   /* "max-height": "100vh",
                   "overflow": "hidden" */
+}
+
+#projectbox{
+  color: teal;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+#cols {
+  width: 50%;
+}
+
+
+h5{
+  font-weight: 600; 
+  font-family: baskerville;
+  font-size: 5vw;
+  padding: 0pt; 
+  margin: 0pt;
+}
+
+
+
+@media (max-width: 768px) {
+  #projectbox{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+
+
+  .ProjectContent {
+    padding: 4vh 0vh 0vh 0vh;
+  }
+
+
+  #cols{
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+  }
+  
+
+  .normalabout{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  .bouncing-text{
+    font-size: calc(10vw);
+  }
+  
+  h5{
+    font-weight: 600; 
+    font-family: baskerville;
+    font-size: calc(7vw);
+    padding:0pt; 
+    margin:0pt;
+  }
+
+  h1{
+    font-size: calc(8vw);
+    font-weight: 600; 
+  }
 }

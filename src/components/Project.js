@@ -58,7 +58,7 @@ export default function Project(props) {
             <div className="Project">
                  */}
           
-            <div style={{display:'flex', width: '100%', flexDirection: 'row'}} onClick={handleOpen}> 
+            <div id="projectbox" onClick={handleOpen}> 
                 <img src={props.image} alt={props.name} style={{maxHeight: '50vh', width: 'calc(120px + 20vw)', margin: 'initial', objectFit: 'cover'}}/>
                 <div className="ProjectContent" >
                     <h4 style={{'margin-top':'0pt', 'margin-bottom': '0pt', 'align-content': 'space-between', 'color':'rgb(104 104 104)', 'fontWeight': 'normal'}}>{props.year}</h4>

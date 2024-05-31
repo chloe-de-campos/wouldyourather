@@ -11,7 +11,7 @@ export default function WorkGallery(props)  {
     return(
         // <p>workgallery</p>
         <div style={{'padding-top': '8vh'}} id="workGallery" className= "workGallery">
-            <h5 style={{fontWeight: '500',fontFamily: 'baskerville', fontSize: 'calc(5vw)', padding:'0pt', margin:'0pt'}}>WORK</h5>
+            <h5 >WORK</h5>
              {Projects.map((project) => (Project(project)))}
         </div>
         

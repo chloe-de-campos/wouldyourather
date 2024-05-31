@@ -181,6 +181,39 @@ function ScrollMan3() {
 }
 
 
+function ScrollMeMan() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  // Function to calculate rotation
+  const calculateRotation = (scrollPosition) => {
+    // Here you calculate the rotation
+    const rotation = -0.2 * scrollPosition - 80;
+
+    return rotation < -730 ? -730 : rotation;
+  };
+
+
+  return (
+    <div>
+      <img  style={{ position: 'relative', right: `calc(0.40 * ${scrollPosition}px - 100vw)`, top: `calc(0.003 * ${scrollPosition}px + 10px)`,  transform: `rotate(${calculateRotation(scrollPosition)}deg)` }}id="myPath" src={"men/meman.png"}/>
+    </div>
+  );
+}
+
 
 
 const Home = () =>{
@@ -253,7 +286,7 @@ const Home = () =>{
                  <span className="normalabout" style={{"display":"flex", justifyContent:'space-between', alignContent:'space-between'}}>
                 
                    <div id="cols" >
-                   <h5 style={{fontWeight: '500',fontFamily: 'baskerville', fontSize: 'calc(5vw)', padding:'0pt', margin:'0pt'}}>ABOUT</h5>
+                   <h5 >ABOUT</h5>
                            
                              <p>
                              Drawing from my background in visual arts and computer science, I bring a playful functionality to my work as a designer. 
@@ -276,8 +309,9 @@ const Home = () =>{
                              </p>
                
                      </div>
-                     <div id="cols" style={{width:'50%', display:'flex', alignItems:'flex-start'}}>
-                          <img id="myPath" src={"men/meman.png"}/>
+                     <div id="cols" style={{ display:'flex', alignItems:'flex-start'}}>
+                          {/* <img id="myPath" src={"men/meman.png"}/> */}
+                          < ScrollMeMan/>
                     </div>
                </span>
                

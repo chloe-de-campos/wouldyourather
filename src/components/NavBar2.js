@@ -68,7 +68,6 @@ const NavBar2= () => {
   }
 
 
-  if(window.matchMedia("(min-width: 600px)").matches){
     return (
       
       <div style={{padding:padding}} className="NavBar2">
@@ -110,48 +109,6 @@ const NavBar2= () => {
         </div>
        </div>        
     )
-  }
-  else{
-    return (
-      <div style={{position: 'relative', justifyContent:'right', padding:'1%',}} id="NavBar" className="NavBar">
-          
-                <div className="NavButtons">
-                <Button title="home" style={{"margin": "0px"}} target="_blank" onClick={openHome}>
-                HOME
-              </Button>
-
-              <Button title="my work" style={{"margin": "0px"}} target="_blank"  onClick={openWork}>
-                WORK
-              </Button>
-
-              <Button title="about" style={{"margin": "0px"}} target="_blank" onClick={openAbout}>
-                ABOUT
-              </Button>
-{/* 
-                <Button title="link me in" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://www.linkedin.com/in/chloedecampos">
-  
-                    <LinkedInIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
-                </Button>
-                <Button title="email me" style={{"margin": "-3px", padding: "1px"}} target="_blank"  href="mailto:chloe_de_campos@brown.edu">
-
-                    <EmailIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
-                </Button>
-                <Button title="about me" style={{"margin": "-3px", padding: "1px"}} onClick={openAbout}>
- 
-                    <PersonIcon style={{width:"20px", margin:"0px", padding:"0px"}}/>
-                </Button>
-            
-                <Button title="my github" style={{"margin": "-3px", padding: "1px"}} target="_blank" href="https://github.com/chloe-de-campos/">
-
-                    <GitHub style={{width:"20px", margin:"0px", padding:"0px"}} />
-                </Button> */}
-            
-        </div>
-       </div>        
-
-       
-    )
-  }
   
 }
 
