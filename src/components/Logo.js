@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../logo.css';
 
 
@@ -6,11 +6,15 @@ const Logo = () => {
         // setViewBox( '0 0 ' + document.documentElement.clientWidth.toString() + ' ' + document.documentElement.clientHeight.toString() )
     
     const [showComponent, setShowComponent] = useState(true);
-    const animationPlayed = localStorage.getItem('animationPlayed');
-    if (!animationPlayed){
-        setShowComponent(false);
-        
-    }
+    useEffect(() => {
+      const animationPlayed = localStorage.getItem('animationPlayed');
+  
+      if (!animationPlayed) {
+        // If animation hasn't been played, set it to true and show the component
+        localStorage.setItem('animationPlayed', 'true');
+        setShowComponent(true);
+      }
+    }, []);
 
     // useEffect(() => {
     //     if (!animationPlayed){

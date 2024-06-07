@@ -1,8 +1,6 @@
 
 import Logo from '../components/Logo'
 
-
-
 import React, { useState, useEffect } from 'react';
 import Question from './Question';
 import initialQuestions from '../data/initialQuestions.json';
@@ -27,15 +25,28 @@ const Game = () => {
   const history = useNavigate();
 
 
+  const loadStats = async () => {
+    const data = await getResponses();
+    const questionId = questions[currentIndex]?.id;
+    if (questionId) {
+      const questionResponses = data.filter(response => response.questionId === questionId);
+      const optionAResponses = questionResponses.filter(response => response.choice === 'optionA').length;
+      const optionBResponses = questionResponses.filter(response => response.choice === 'optionB').length;
+      setQuestionStats({ optionA: optionAResponses, optionB: optionBResponses });
+    }
+  };
 
+  
   useEffect(() => {
     const shuffledQuestions = [...initialQuestions].sort(() => Math.random() - 0.5);
     setQuestions(shuffledQuestions);
-  }, []);
+  }, [initialQuestions]);
 
   useEffect(() => {
     loadStats();
-  }, [currentIndex]); // Update stats when the index changes
+  }, [loadStats, currentIndex]); // Add loadStats and currentIndex as dependencies
+
+   // Update stats when the index changes
 
   // const handleChoice = async (questionId, choice) => {
   //   const newResponse = {
@@ -122,7 +133,7 @@ const handleChoice = async (questionId, choice) => {
     timestamp: new Date().toISOString(),
   };
 
-  // const responseRef = await storeResponse(newResponse);
+  const responseRef = await storeResponse(newResponse);
   // console.log('rrr', responseRef, responseRef.key)
   document.cookie = `${questionId}=${responseRef}`;
  
@@ -165,17 +176,6 @@ const handleChoice = async (questionId, choice) => {
     setToggleStats(false);
 
   }
-
-  // const loadStats = async () => {
-  //   const data = await getResponses();
-  //   const questionId = questions[currentIndex]?.id;
-  //   if (questionId) {
-  //     const questionResponses = data.filter(response => response.questionId === questionId);
-  //     const optionAResponses = questionResponses.filter(response => response.choice === 'optionA').length;
-  //     const optionBResponses = questionResponses.filter(response => response.choice === 'optionB').length;
-  //     setQuestionStats({ optionA: optionAResponses, optionB: optionBResponses });
-  //   }
-  // };
 
   const renderPieChart = () => {
     const question = questions[currentIndex];
@@ -257,46 +257,42 @@ const handleChoice = async (questionId, choice) => {
   
   return (
     <div>
-     <h1> HI! !!!</h1>
+      <div style={{display:'flex', flexDirection: 'row'}}>
+          {/* <button style={{'background-color':"RED"}}   > */}
+            < RiPieChartFill id="piecharticon" onClick={() => history('/stats')} size={50} style={{color:"#FFF"}}  />
+          {/* </button> */}
+
+        <Logo></Logo>
+      </div>
+      <div id="game">
+
+
+        {questions.length > 0 && currentIndex < questions.length && (
+          <div>
+            <div id="questionWrapper">
+              <button className="arrow" onClick={() =>  setCurrentIndex((prevIndex) => Math.max(0, prevIndex - 1))} disabled={currentIndex === 0}>
+                <MdArrowBackIos size={30}/>
+              </button>
+              <Question
+                question={questions[currentIndex]}
+                onRespond={(choice) => handleChoice(questions[currentIndex].id, choice)}
+                response={responses[questions[currentIndex].id]}
+              />
+              <button className="arrow" onClick={() =>  next()} disabled={currentIndex === questions.length - 1}>
+                <MdArrowForwardIos size={30} />
+              </button>
+            </div>
+            <div >
+              {toggleStats&& questionStats && renderPieChart()} 
+            </div>
+            <div className="navigation-buttons">
+              {/* <button onClick={() => history('/stats')}>View All Stats</button> */}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
 
 export default Game;
-
-
-// <div style={{display:'flex', flexDirection: 'row'}}>
-// {/* <button style={{'background-color':"RED"}}   > */}
-//   < RiPieChartFill id="piecharticon" onClick={() => history('/stats')} size={50} style={{color:"#FFF"}}  />
-// {/* </button> */}
-
-// <Logo></Logo>
-// </div>
-// <div id="game">
-
-
-// {questions.length > 0 && currentIndex < questions.length && (
-// <div>
-//   <div id="questionWrapper">
-//     <button className="arrow" onClick={() =>  setCurrentIndex((prevIndex) => Math.max(0, prevIndex - 1))} disabled={currentIndex === 0}>
-//       <MdArrowBackIos size={30}/>
-//     </button>
-//     <Question
-//       question={questions[currentIndex]}
-//       onRespond={(choice) => handleChoice(questions[currentIndex].id, choice)}
-//       response={responses[questions[currentIndex].id]}
-//     />
-//     <button className="arrow" onClick={() =>  next()} disabled={currentIndex === questions.length - 1}>
-//       <MdArrowForwardIos size={30} />
-//     </button>
-//   </div>
-//   <div >
-//     {toggleStats&& questionStats && renderPieChart()} 
-//   </div>
-//   <div className="navigation-buttons">
-//     {/* <button onClick={() => history('/stats')}>View All Stats</button> */}
-//   </div>
-// </div>
-// )}
-// </div>
-

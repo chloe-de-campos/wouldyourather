@@ -4,6 +4,7 @@
 name: Node.js CI
 env:
   CI: ""
+  REACT_APP_API_KEY: secrets.REACT_APP_API_KEY
 
 on:
   push:
