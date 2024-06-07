@@ -257,42 +257,45 @@ const handleChoice = async (questionId, choice) => {
   
   return (
     <div>
-      <div style={{display:'flex', flexDirection: 'row'}}>
-          {/* <button style={{'background-color':"RED"}}   > */}
-            < RiPieChartFill id="piecharticon" onClick={() => history('/stats')} size={50} style={{color:"#FFF"}}  />
-          {/* </button> */}
-
-        <Logo></Logo>
-      </div>
-      <div id="game">
-
-
-        {questions.length > 0 && currentIndex < questions.length && (
-          <div>
-            <div id="questionWrapper">
-              <button className="arrow" onClick={() =>  setCurrentIndex((prevIndex) => Math.max(0, prevIndex - 1))} disabled={currentIndex === 0}>
-                <MdArrowBackIos size={30}/>
-              </button>
-              <Question
-                question={questions[currentIndex]}
-                onRespond={(choice) => handleChoice(questions[currentIndex].id, choice)}
-                response={responses[questions[currentIndex].id]}
-              />
-              <button className="arrow" onClick={() =>  next()} disabled={currentIndex === questions.length - 1}>
-                <MdArrowForwardIos size={30} />
-              </button>
-            </div>
-            <div >
-              {toggleStats&& questionStats && renderPieChart()} 
-            </div>
-            <div className="navigation-buttons">
-              {/* <button onClick={() => history('/stats')}>View All Stats</button> */}
-            </div>
-          </div>
-        )}
-      </div>
+     <h1> HI! </h1>
     </div>
   );
 };
 
 export default Game;
+
+
+// <div style={{display:'flex', flexDirection: 'row'}}>
+// {/* <button style={{'background-color':"RED"}}   > */}
+//   < RiPieChartFill id="piecharticon" onClick={() => history('/stats')} size={50} style={{color:"#FFF"}}  />
+// {/* </button> */}
+
+// <Logo></Logo>
+// </div>
+// <div id="game">
+
+
+// {questions.length > 0 && currentIndex < questions.length && (
+// <div>
+//   <div id="questionWrapper">
+//     <button className="arrow" onClick={() =>  setCurrentIndex((prevIndex) => Math.max(0, prevIndex - 1))} disabled={currentIndex === 0}>
+//       <MdArrowBackIos size={30}/>
+//     </button>
+//     <Question
+//       question={questions[currentIndex]}
+//       onRespond={(choice) => handleChoice(questions[currentIndex].id, choice)}
+//       response={responses[questions[currentIndex].id]}
+//     />
+//     <button className="arrow" onClick={() =>  next()} disabled={currentIndex === questions.length - 1}>
+//       <MdArrowForwardIos size={30} />
+//     </button>
+//   </div>
+//   <div >
+//     {toggleStats&& questionStats && renderPieChart()} 
+//   </div>
+//   <div className="navigation-buttons">
+//     {/* <button onClick={() => history('/stats')}>View All Stats</button> */}
+//   </div>
+// </div>
+// )}
+// </div>
