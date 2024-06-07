@@ -40,7 +40,6 @@ function Chloe() {
   );
 }
 
-
 function Campos() { 
 
   const [scrollPosition, setScrollPosition] = useState(0);
