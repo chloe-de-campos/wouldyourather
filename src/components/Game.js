@@ -35,7 +35,7 @@ const Game = () => {
 
   useEffect(() => {
     loadStats();
-  }, [currentIndex,loadStats]); // Update stats when the index changes
+  }, [currentIndex]); // Update stats when the index changes
 
   // const handleChoice = async (questionId, choice) => {
   //   const newResponse = {
@@ -122,7 +122,7 @@ const handleChoice = async (questionId, choice) => {
     timestamp: new Date().toISOString(),
   };
 
-  const responseRef = await storeResponse(newResponse);
+  // const responseRef = await storeResponse(newResponse);
   // console.log('rrr', responseRef, responseRef.key)
   document.cookie = `${questionId}=${responseRef}`;
  
@@ -166,16 +166,16 @@ const handleChoice = async (questionId, choice) => {
 
   }
 
-  const loadStats = async () => {
-    const data = await getResponses();
-    const questionId = questions[currentIndex]?.id;
-    if (questionId) {
-      const questionResponses = data.filter(response => response.questionId === questionId);
-      const optionAResponses = questionResponses.filter(response => response.choice === 'optionA').length;
-      const optionBResponses = questionResponses.filter(response => response.choice === 'optionB').length;
-      setQuestionStats({ optionA: optionAResponses, optionB: optionBResponses });
-    }
-  };
+  // const loadStats = async () => {
+  //   const data = await getResponses();
+  //   const questionId = questions[currentIndex]?.id;
+  //   if (questionId) {
+  //     const questionResponses = data.filter(response => response.questionId === questionId);
+  //     const optionAResponses = questionResponses.filter(response => response.choice === 'optionA').length;
+  //     const optionBResponses = questionResponses.filter(response => response.choice === 'optionB').length;
+  //     setQuestionStats({ optionA: optionAResponses, optionB: optionBResponses });
+  //   }
+  // };
 
   const renderPieChart = () => {
     const question = questions[currentIndex];
@@ -299,3 +299,4 @@ export default Game;
 // </div>
 // )}
 // </div>
+
