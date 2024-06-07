@@ -1,0 +1,75 @@
+
+#wyrL {
+    transition: transform 1s cubic-bezier(.28,.56,.75,.98);
+}
+
+#wyrH {
+    transition: transform 1s cubic-bezier(.28,.56,.75,.98);
+}
+
+#base{
+    transform-origin: -10pt 0;
+}
+
+.flying-component {
+    transition: transform 1s cubic-bezier(.28,.56,.75,.98);
+}
+
+.fly-up {
+    animation: fly-up .4s ease-in backwards;
+    animation-delay: .6s;
+}
+  
+  @keyframes fly-up {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+.fly-down {
+    animation: fly-down .4s ease-in backwards;
+    animation-delay: 0.9s;
+}
+
+    @keyframes fly-down {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+    }
+
+.logo-animate{
+    animation: get_small 0.6s cubic-bezier(.73,-0.02,1,.55) backwards;
+    animation-delay: 1.3s;
+}
+
+    @keyframes get_small {
+        from {
+            transform: scale(250%) translateY(50%)
+        }
+        to {
+            transform: scale(100%) translateY(0)
+        }
+    
+    }
+
+@media (max-width: 768px) {
+    @keyframes get_small {
+        from {
+            transform: scale(120%) translateY(50%)
+        }
+        to {
+            transform: scale(100%) translateY(0)
+        }
+    
+    }
+
+    .logo{
+        padding-bottom: -15%;
+    }
+}
