@@ -147,13 +147,6 @@
     "optionBshort": "subway phone thief" 
   },
   {
-    "id": 22,
-    "optionA": "take a protected left turn from a big street to a big street. you have to wait an average of 150 secs for the light to turn for you",
-    "optionB": "take an unprotected left turn from a little street onto a big street. there is a 50\/50 chance that traffic is super heavy vs no cars around. ",
-    "optionAshort": "protected left",
-    "optionBshort": "unprotected left" 
-  },
-  {
     "id": 23,
     "optionA": "while the barista is handing u ur scalding hot coffee, you spill it on yourself (its a scene)",
     "optionB": "while handing the barista ur water bottle to fill, accidentally spilling about half the water bottle that you forgot was already full with old water on the nice man ",
@@ -167,13 +160,7 @@
     "optionAshort": "pantry rat",
     "optionBshort": "pantry maggots" 
   },
-  {
-    "id": 25,
-    "optionA": "take a protected left turn from a big street to a big street. you have to wait an average of 150 secs for the light to turn for you",
-    "optionB": "take an unprotected left turn from a little street onto a big street. there is a 50\/50 chance that traffic is super heavy vs no cars around. ",
-    "optionAshort": "protected left",
-    "optionBshort": "unprotected left" 
-  },
+
   {
     "id": 26,
     "optionA": "birth a baby",
