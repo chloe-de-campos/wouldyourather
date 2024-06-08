@@ -18,6 +18,21 @@ const storeResponse = async (responseData) => {
   }
 };
 
+// Function to store a new response
+const storeFeedback = async (responseData) => {
+  try {
+    const responsesRef = ref(db, 'feedback');
+
+    const newResponseRef = push(responsesRef);
+    await set(newResponseRef, responseData);
+    console.log('Feedback stored with ID:', newResponseRef.key);
+    return (newResponseRef.key)
+  } catch (e) {
+    console.error('Error storing feedback:', e);
+  }
+};
+
+
 
 
 // Function to remove an existing response by its ID
@@ -33,4 +48,4 @@ const removeResponse = async (responseId) => {
   }
 };
 
-export { storeResponse, removeResponse };
+export { storeResponse, removeResponse, storeFeedback };

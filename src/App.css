@@ -376,3 +376,24 @@ body, html {
   padding: 8px;
 }
 }
+
+#footer {
+
+  display: flex;
+  width: 100%;
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    bottom: 1vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+  
+}
