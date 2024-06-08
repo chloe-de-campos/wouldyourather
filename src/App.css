@@ -331,51 +331,7 @@ body, html {
   cursor: pointer;
 }
 
-@media (max-width: 768px) { /* Adjustments for tablets and below */
-  .question {
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 20px;
-  }
-  #questionWrapper {
-    margin: 20px;
-  }
-
-.stat {
-  margin-bottom: 20px;
-  width: 40vw;
-  /* width: 100%;
-  height: 10vh;
-  padding: 1vw; */
-  /* flex: 1;
-  margin: 10px; Add margin between charts */
-}
-}
-
-@media (max-width: 560px) { /* Adjustments for tablets and below */
- 
-.stat {
-  margin-bottom: 20px;
-  width: 60vw;
-  /* width: 100%;
-  height: 10vh;
-  padding: 1vw; */
-  /* flex: 1;
-  margin: 10px; Add margin between charts */
-}
-}
-
-
-
-@media (max-width: 768px) {
-.sort-select, .navigation-buttons button {
-  font-size: 14px;
-  padding: 8px;
-}
-}
 
 #footer {
 
@@ -388,6 +344,16 @@ body, html {
     align-content: center;
     flex-wrap: nowrap;
     bottom: 1vh;
+
+}
+#addideadialogue{
+
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  opacity: 100%;
+  z-index: 5;
 }
 
 main {
@@ -396,4 +362,59 @@ main {
   justify-content: space-between;
   height: 95vh;
   
+}
+
+
+
+@media (max-width: 768px) { /* Adjustments for tablets and below */
+  .question {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 20px;
+  }
+  #questionWrapper {
+    margin: 20px;
+  }
+  #addideadialogue{
+    width: 80%
+  }
+  
+
+.stat {
+  margin-bottom: 20px;
+  width: 40vw;
+  /* width: 100%;
+  height: 10vh;
+  padding: 1vw; */
+  /* flex: 1;
+  margin: 10px; Add margin between charts */
+}
+}
+
+
+
+@media (max-width: 560px) { /* Adjustments for tablets and below */
+ 
+.stat {
+  margin-bottom: 20px;
+  width: 60vw;
+  /* width: 100%;
+  height: 10vh;
+  padding: 1vw; */
+  /* flex: 1;
+  margin: 10px; Add margin between charts */
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+.sort-select, .navigation-buttons button {
+  font-size: 14px;
+  padding: 8px;
+}
 }

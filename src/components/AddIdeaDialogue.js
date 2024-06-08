@@ -39,14 +39,8 @@ const AddIdeaDialogue = ({ show, handleClose, handleSubmit }) => {
             alignItems: 'center'
         }}>
             
-            <div  style={{
-                backgroundColor: '#FFFFFF',
-                padding: '20px',
-                borderRadius: '5px',
-                width: '30%',
-                opacity: '100%',
-                zIndex: '5',
-            }}>
+            <div  id="addideadialogue"
+            >
                 <h3 style={{color: '#303030', textAlign: 'left',  margin: '10px'}}>Add your own question</h3>
 
                 <form onSubmit={onSubmit} style={{padding:'10px', display:'flex', flexDirection:'column', alignItems:'end'}}>
