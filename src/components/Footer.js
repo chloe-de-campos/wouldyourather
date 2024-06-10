@@ -35,7 +35,7 @@ const Footer = () => {
 
     return (
         <div id="footer" style={{ display: 'flex', flexDirection: 'row', color: "#FFF" }}>
-            <p style={{opacity: '30%' }}>Got an burning question? <a style={{opacity: '80%', textDecoration: 'underline', cursor: 'pointer' }} onClick={handleShareClick}>Add it to the list</a></p>
+            <p style={{opacity: '30%' }}>Got a burning question? <a style={{opacity: '80%', textDecoration: 'underline', cursor: 'pointer' }} onClick={handleShareClick}>Add it to the list</a></p>
             <AddIdeaDialogue show={showModal} handleClose={handleCloseModal} handleSubmit={handleSubmitIdea} />
         </div>
     );
